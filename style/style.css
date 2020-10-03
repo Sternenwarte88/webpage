@@ -5,9 +5,9 @@ body {
 	margin: 0;
 }
 
-.head-title{
-    display: inline-block;
-    vertical-align: middle;
+.head-title {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .head-title > a {
@@ -15,23 +15,32 @@ body {
 	font-family: 'Tangerine', cursive;
 	font-size: 50px;
 	font-weight: bold;
+	color: #34b37e;
 	text-decoration: none;
 }
 
 .main-header {
-	background: rgb(100, 255, 190);
+	background: #64ffbe;
 	width: 100%;
 	padding: 8px 16px;
 }
 
 .main-nav {
 	display: inline-block;
+	width: calc(100% - 220px);
 	text-align: right;
-    width: calc(100% - 220px);
-    vertical-align: middle;
+	vertical-align: middle;
 }
 .main-nav__item {
 	display: inline-block;
+	padding: 50px;
+}
+
+.main-nav__item > a {
+	color: #34b37e;
+	text-decoration: none;
+	font-family: 'Grenze Gotisch', cursive;
+	font-size: 26px;
 }
 
 .main-nav__items {
