@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+
+.head-title{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.head-title > a {
+	display: inline-block;
+	font-family: 'Tangerine', cursive;
+	font-size: 50px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.main-header {
+	background: rgb(100, 255, 190);
+	width: 100%;
+	padding: 8px 16px;
+}
+
+.main-nav {
+	display: inline-block;
+	text-align: right;
+    width: calc(100% - 220px);
+    vertical-align: middle;
+}
+.main-nav__item {
+	display: inline-block;
+}
+
+.main-nav__items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
