@@ -24,83 +24,160 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./style/style.css" />
+		<script
+			src="https://kit.fontawesome.com/d3c40689e8.js"
+			defer
+			crossorigin="anonymous"
+		></script>
 		<title>Stephan Löcher - Ihr Web-Developer</title>
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="head-title">
-				<a href="index.html">Stephan Löcher</a>
+				<a class="brand" href="index.html">Stephan Löcher</a>
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav__items">
 					<li class="main-nav__item">
-						<a href="./aboutme.html">About me</a>
+						<a class="nav-link" href="./aboutme.html">About me</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="./mystack">My Stack</a>
+						<a class="nav-link" href="./mystack">My Stack</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="https://pngtree.com/free-backgrounds">Referenzen</a>
+						<a class="nav-link" href="https://pngtree.com/free-backgrounds"
+							>Referenzen</a
+						>
 					</li>
 				</ul>
 			</nav>
 		</header>
-		<section class="top-box"></section>
-		<section>
-			<div>
-				<h1 class="showcase-title">Showcase Pages</h1>
-			</div>
-		</section>
-		<section class="showcase">
-			<div class="showcase-card">
-				<article>
-					<h1>Tin-Dog</h1>
-					<h2>Eine wunderschöne Single-Page-Application</h2>
-					<ul>
-						<li>Einladende landingpage</li>
-						<li>Wichtigsten Informationen auf einen Blick</li>
-						<li></li>
+		<main>
+			<section class="top-box">
+				<div>
+					<ul class="stack-list">
+						<h1 class="main-title title">Powered by:</h1>
+						<li class="stack-list__item">
+							<img class="stack" src="./img/node.png" alt="" />
+						</li>
+						<li class="stack-list__item">
+							<img
+								class="stack"
+								src="./img/html-css-js.png"
+								alt="html-css-js"
+							/>
+						</li>
+						<li class="stack-list__item">
+							<img class="stack" src="./img/express.png" alt="" />
+						</li>
+						<li class="stack-list__item">
+							<img class="stack" src="./img/react.png" alt="" />
+						</li>
+						<li class="stack-list__item">
+							<img class="stack" src="./img/mongodb.png" alt="" />
+						</li>
+						<li class="stack-list__item">
+							<img class="stack" src="./img/redux.png" alt="" />
+						</li>
 					</ul>
-					<div>
-						<a href="https://wusabinga.github.io/TinDog"
-							><button>Visit this showcase-page</button></a
-						>
-					</div>
-				</article>
-			</div>
-			<div class="showcase-card">
-				<article>
-					<h1>uHost</h1>
-					<h2>Host your business on a perfect way</h2>
+				</div>
+			</section>
+			<section>
+				<div>
+					<h1 class="title">Showcase Pages</h1>
+				</div>
+			</section>
+			<section class="showcase">
+				<div class="showcase-card">
+					<article>
+						<h1>Tin-Dog</h1>
+						<h2 class="showcase-desription-header">
+							Eine wunderschöne Single-Page-Application
+						</h2>
+						<ul class="showcase-list">
+							<li class="showcase-feature">Einladende landingpage</li>
+							<li class="showcase-feature">
+								Wichtigsten Informationen auf einen Blick
+							</li>
+							<li class="showcase-feature"></li>
+						</ul>
+						<div>
+							<a href="https://wusabinga.github.io/TinDog"
+								><button class="action-btn">Visit this showcase-page</button></a
+							>
+						</div>
+					</article>
+				</div>
+				<div class="showcase-card">
+					<article>
+						<h1>uHost</h1>
+						<h2 class="showcase-desription-header">
+							Host your business on a perfect way
+						</h2>
+						<ul class="showcase-list">
+							<li class="showcase-feature">Features</li>
+							<li class="showcase-feature">Dein Angebot, deine Produkte</li>
+							<li class="showcase-feature">Deine Highlights</li>
+						</ul>
+						<div>
+							<a href="https://wusabinga.github.io/TinDog"
+								><button class="action-btn">Visit this showcase-page</button></a
+							>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="features">
+				<div>
+					<h1 class="title features-title">Meine besonderen Eigenschaften</h1>
+				</div>
+				<div>
 					<ul>
-						<li>Features</li>
-						<li>Dein Angebot, deine Produkte</li>
-						<li>Deine Highlights</li>
+						<li class="features-item">
+							<i class="fas fa-book-reader fa-2x"></i> schnell Lernfähig
+						</li>
+						<li class="features-item">
+							<i class="fas fa-users fa-2x"></i> Teamplayer
+						</li>
+						<li class="features-item">
+							<i class="far fa-lightbulb fa-2x"></i> Kreativ
+						</li>
+						<li class="features-item">
+							<i class="fas fa-microscope fa-2x"></i> Analytisch
+						</li>
+						<li class="features-item">
+							<i class="fas fa-vial fa-2x"></i> Experimentier-Freudig
+						</li>
+						<li class="features-item">
+							<i class="fas fa-map-marked-alt fa-2x"></i> Zielstrebig
+						</li>
 					</ul>
-					<div>
-						<a href="https://wusabinga.github.io/TinDog"
-							><button>Visit this showcase-page</button></a
-						>
-					</div>
-				</article>
-			</div>
-		</section>
-		<section>
-			<div>
-				<h1>Meine besonderen Eigenschaften</h1>
-			</div>
-			<div>
-				<ul>
-					<li>
-						Lernfähig
-					</li>
-					<li>Teamplayer</li>
-					<li>Kreativ</li>
-					<li>Analytisch</li>
-					<li>Experimentier-Freudig</li>
-					<li>Zielstrebig</li>
-				</ul>
-			</div>
-		</section>
+				</div>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<ul class="footer-list">
+				<li class="footer-list__item">
+					<a class="footer-link" href="https://github.com/Wusabinga"
+						><i class="fab fa-github fa-2x"></i
+					></a>
+				</li>
+				<li class="footer-list__item">
+					<a
+						class="footer-link"
+						href="https://www.linkedin.com/in/stephan-l%C3%B6cher-2ab7871b2/"
+						><i class="fab fa-linkedin fa-2x"></i
+					></a>
+				</li>
+				<li class="footer-list__item">
+					<a class="footer-link" href="http://"
+						><img
+							class="case-law"
+							src="./img/FAVPNG_court-gavel-judge-lawsuit_kLjPZJmy.png"
+							alt="Rechtliches"
+					/></a>
+				</li>
+			</ul>
+		</footer>
 	</body>
 </html>

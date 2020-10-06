@@ -9,6 +9,21 @@ body {
 	margin: 0;
 }
 
+.title {
+	text-align: center;
+	font-size: 36px;
+	font-family: 'Amaranth', sans-serif;
+	margin-top: 50px;
+	padding: 15px 0px;
+	text-shadow: 5px 5px 8px #9cc6f0;
+	width: 100%;
+}
+
+div {
+	vertical-align: middle;
+	text-align: center;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                    Head                                    */
 /* -------------------------------------------------------------------------- */
@@ -23,7 +38,7 @@ body {
 	display: inline-block;
 }
 
-.head-title > a {
+.brand {
 	display: inline-block;
 	font-family: 'Tangerine', cursive;
 	font-size: 65px;
@@ -50,7 +65,7 @@ body {
 	padding: 0 20px;
 }
 
-.main-nav__item > a {
+.nav-link {
 	color: #9cc6f0;
 	text-decoration: none;
 	font-family: 'Grenze Gotisch', cursive;
@@ -59,7 +74,7 @@ body {
 	padding-right: 5px;
 }
 
-.main-nav__item > a:hover {
+.nav-link:hover {
 	color: #88abf7;
 	border-bottom: #88abf7 2px;
 	border-bottom-style: dotted;
@@ -67,7 +82,7 @@ body {
 	border-bottom-right-radius: 15%;
 }
 
-.main-nav__item > a:active {
+.nav-link:active {
 	color: #5e76ab;
 }
 
@@ -82,24 +97,42 @@ body {
 	height: 900px;
 }
 
+.stack-list {
+	margin-top: 80px;
+	width: 100%;
+	display: inline-block;
+	padding: 0;
+}
+
+.stack-list__item {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	margin: auto;
+}
+
+.stack {
+	text-align: center;
+	height: 300px;
+	width: 300px;
+	display: inline-block;
+	margin: auto;
+}
+
+.main-title {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                  Showcase                                  */
 /* -------------------------------------------------------------------------- */
-
-.showcase-title {
-	text-align: center;
-	font-size: 36px;
-	font-family: 'Amaranth', sans-serif;
-	margin-top: 50px;
-	padding: 15px 0px;
-	text-shadow: 5px 5px 8px #9cc6f0;
-	width: 100%;
-}
 
 .showcase {
 	width: 100%;
 	display: inline-block;
 	text-align: center;
+	/* height: 100%; */
 }
 
 .showcase-card {
@@ -108,34 +141,32 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	display: inline-block;
-	height: 300px;
+	/* height: 300px; */
 	box-shadow: 8px 8px 8px #9cc6f0;
-	margin: auto 25px;
+	margin: 0 25px;
+	padding: 25px;
 	font-family: 'PT Sans', sans-serif;
 }
 
-.showcase-card h2 {
+.showcase-desription-header {
 	font-family: 'Libre Baskerville', serif;
 }
 
 .showcase-card article {
-	height: 280px;
+	/* height: 280px; */
 	padding: 0;
 }
 
-.showcase-card ul {
+.showcase-list {
 	padding: 0;
 }
 
-.showcase-card li {
+.showcase-feature {
 	list-style: none;
 	padding: 3px;
 	vertical-align: middle;
 }
 
-.showcase-card div {
-	vertical-align: middle;
-}
 .showcase-card button {
 	height: 45px;
 	border-radius: 15px;
@@ -149,19 +180,66 @@ body {
 	display: inline-block;
 }
 
-.showcase-card button:hover {
+.action-btn:hover {
 	background: #8aaadb;
 	border: #997efc 2px dotted;
 	border-radius: 15px;
 }
 
-.showcase-card button:active {
+.action-btn:active {
 	background: #6e67db;
 }
-.showcase-card button:focus {
+.action-btn:focus {
 	outline: none;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                  Features                                  */
 /* -------------------------------------------------------------------------- */
+
+.features {
+	margin: 48px 0px;
+	padding: 48px 0px;
+	background-color: #7ee8fc;
+}
+
+.features-title {
+	text-shadow: 5px 5px 8px white;
+	padding: 8px;
+	padding-bottom: 36px;
+	margin: 8px;
+}
+
+.features-item {
+	display: inline-block;
+	list-style: none;
+	font-family: 'Libre Baskerville', serif;
+	padding: 5px 25px;
+	font-size: large;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+.footer-list {
+	text-align: center;
+	width: 100%;
+	list-style: none;
+}
+
+.footer-list__item {
+	width: 30%;
+	display: inline-block;
+}
+
+.footer-link {
+	color: black;
+	cursor: grab;
+}
+
+.case-law {
+	height: 10%;
+	width: 10%;
+	vertical-align: bottom;
+}
