@@ -95,9 +95,9 @@ div {
 /* -------------------------------------------------------------------------- */
 /*                                   Footer                                   */
 /* -------------------------------------------------------------------------- */
-footer {
+.main-footer {
 	position: fixed;
-	bottom: 0%;
+	bottom: 0px;
 	height: 48px;
 	width: 100%;
 	background: linear-gradient(
@@ -111,21 +111,23 @@ footer {
 	text-align: center;
 	width: 100%;
 	list-style: none;
-	margin: 0;
+	margin: 8px;
 }
 
 .footer-list__item {
-	width: 30%;
+	width: 20%;
 	display: inline-block;
 }
 
 .footer-link {
 	color: black;
 	cursor: grab;
+	position: relative;
 }
 
 .case-law {
 	height: 10%;
 	width: 10%;
 	vertical-align: bottom;
+	font-size: 2em;
 }
