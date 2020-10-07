@@ -1,90 +1,6 @@
-/* -------------------------------------------------------------------------- */
-/*                                Main Content                                */
-/* -------------------------------------------------------------------------- */
 
-* {
-	box-sizing: border-box;
-}
-body {
-	margin: 0;
-}
 
-.title {
-	text-align: center;
-	font-size: 36px;
-	font-family: 'Amaranth', sans-serif;
-	margin-top: 50px;
-	padding: 15px 0px;
-	text-shadow: 5px 5px 8px #9cc6f0;
-	width: 100%;
-}
 
-div {
-	vertical-align: middle;
-	text-align: center;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                    Head                                    */
-/* -------------------------------------------------------------------------- */
-
-.main-header {
-	width: 100%;
-	padding: 8px 16px;
-	position: absolute;
-}
-
-.head-title {
-	display: inline-block;
-}
-
-.brand {
-	display: inline-block;
-	font-family: 'Tangerine', cursive;
-	font-size: 65px;
-	font-weight: bold;
-	color: #9cc6f0;
-	text-decoration: none;
-	padding: 30px 10px;
-	vertical-align: middle;
-}
-
-.main-nav {
-	display: inline-block;
-	width: calc(100% - 350px);
-	text-align: right;
-	vertical-align: middle;
-}
-.main-nav__items {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.main-nav__item {
-	display: inline-block;
-	padding: 0 20px;
-}
-
-.nav-link {
-	color: #9cc6f0;
-	text-decoration: none;
-	font-family: 'Grenze Gotisch', cursive;
-	font-size: 26px;
-	padding-bottom: 3px;
-	padding-right: 5px;
-}
-
-.nav-link:hover {
-	color: #88abf7;
-	border-bottom: #88abf7 2px;
-	border-bottom-style: dotted;
-	border-bottom-left-radius: 15%;
-	border-bottom-right-radius: 15%;
-}
-
-.nav-link:active {
-	color: #5e76ab;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                               Picture Section                              */
@@ -218,28 +134,4 @@ div {
 	font-size: large;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                   Footer                                   */
-/* -------------------------------------------------------------------------- */
 
-.footer-list {
-	text-align: center;
-	width: 100%;
-	list-style: none;
-}
-
-.footer-list__item {
-	width: 30%;
-	display: inline-block;
-}
-
-.footer-link {
-	color: black;
-	cursor: grab;
-}
-
-.case-law {
-	height: 10%;
-	width: 10%;
-	vertical-align: bottom;
-}
