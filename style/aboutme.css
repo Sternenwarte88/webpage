@@ -1,11 +1,10 @@
 .top-box {
-	background: no-repeat bottom
+	background: no-repeat
 		url('../img/wallpapertip_innovation-wallpaper-hd_425586.jpg');
+	position: absolute;
 	background-size: cover;
-	height: 100%;
-	width: 100%;
-	position: fixed;
 	z-index: -1;
+	height: 100%;
 }
 
 .box {
@@ -25,13 +24,14 @@
 	right: 20%;
 	font-size: 1.2rem;
 	text-align: left;
+	padding-top: 2%;
 }
 
 .aboutme-sticker {
 	display: inline-block;
 	position: relative;
 	width: 25%;
-	left: 19%;
+	left: 20%;
 	vertical-align: top;
 	font-size: 1.2rem;
 	text-align: right;
