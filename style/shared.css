@@ -16,7 +16,6 @@ body {
 	margin-top: 50px;
 	padding: 15px 0px;
 	text-shadow: 5px 5px 8px #9cc6f0;
-	width: 100%;
 }
 
 div {
@@ -28,12 +27,14 @@ div {
 /* -------------------------------------------------------------------------- */
 
 .main-header {
-    height: 10%;
+	height: 10%;
 	width: 100%;
 	padding: 8px 16px;
 	position: fixed;
 	background: linear-gradient(
-		rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0.7)
 	);
 }
 
@@ -54,9 +55,9 @@ div {
 
 .main-nav {
 	display: inline-block;
-    right: 10px;
-    top: 22px;
-    position: fixed;
+	right: 10px;
+	top: 22px;
+	position: fixed;
 	text-align: right;
 	vertical-align: middle;
 }
@@ -94,22 +95,23 @@ div {
 /* -------------------------------------------------------------------------- */
 /*                                   Footer                                   */
 /* -------------------------------------------------------------------------- */
-footer{
-    position: fixed;
-    bottom: 0%;
-    height: 48px;
-    width: 100%;
-    background: linear-gradient(
-		rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)
-    );
-
+footer {
+	position: fixed;
+	bottom: 0%;
+	height: 48px;
+	width: 100%;
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0.7)
+	);
 }
 
 .footer-list {
 	text-align: center;
 	width: 100%;
-    list-style: none;
-    margin: 0;
+	list-style: none;
+	margin: 0;
 }
 
 .footer-list__item {
