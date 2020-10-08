@@ -6,13 +6,11 @@
 	background: no-repeat bottom
 		url('../img/—Pngtree—simple\ technology\ business\ line_938398-min.jpg');
 	background-size: cover;
-	height: calc(100% - 48px);
-	
-	
+	height: calc(100% - 3rem);
 }
 
 .stack-list {
-	margin-top: 54px;
+	margin-top: 3.7rem;
 	margin-bottom: 0px;
 	width: 100%;
 	display: inline-block;
@@ -29,15 +27,15 @@
 
 .stack {
 	text-align: center;
-	height: 300px;
-	width: 300px;
+	height: 18.75rem;
+	width: 18.75rem;
 	display: inline-block;
 	margin: auto;
 }
 
 .main-title {
-	font-size: 60px;
-	margin-bottom: 20px;
+	font-size: 3.75rem;
+	margin-bottom: 1.25rem;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -48,7 +46,6 @@
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	/* height: 100%; */
 }
 
 .showcase-card {
@@ -57,7 +54,6 @@
 	text-align: center;
 	vertical-align: middle;
 	display: inline-block;
-	/* height: 300px; */
 	box-shadow: 8px 8px 8px #9cc6f0;
 	margin: 0 25px;
 	padding: 25px;
@@ -69,7 +65,6 @@
 }
 
 .showcase-card article {
-	/* height: 280px; */
 	padding: 0;
 }
 
@@ -84,10 +79,10 @@
 }
 
 .showcase-card button {
-	height: 45px;
+	height: 2.8rem;
 	border-radius: 15px;
 	font-family: 'Amaranth', sans-serif;
-	font-size: 20px;
+	font-size: 1.25rem;
 	border: none;
 	background: #70b1e0;
 	cursor: grab;
