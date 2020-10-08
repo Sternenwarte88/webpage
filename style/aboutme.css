@@ -42,4 +42,5 @@
 .aboutme-sticker li {
 	position: relative;
 	list-style: none;
+	text-align: right;
 }
