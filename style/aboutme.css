@@ -25,6 +25,7 @@
 	font-size: 1.2rem;
 	text-align: left;
 	padding-top: 2%;
+	backdrop-filter: blur(2px);
 }
 
 .aboutme-sticker {
@@ -35,6 +36,7 @@
 	vertical-align: top;
 	font-size: 1.2rem;
 	text-align: right;
+	backdrop-filter: blur(3px);
 }
 
 .aboutme-sticker li {

@@ -7,6 +7,8 @@
 		url('../img/—Pngtree—simple\ technology\ business\ line_938398-min.jpg');
 	background-size: cover;
 	height: calc(100% - 48px);
+	
+	
 }
 
 .stack-list {
@@ -15,6 +17,7 @@
 	width: 100%;
 	display: inline-block;
 	padding: 0;
+	backdrop-filter: blur(4px);
 }
 
 .stack-list__item {
