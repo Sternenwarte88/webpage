@@ -1,46 +1,156 @@
-.top-box {
-	background: no-repeat
-		url('../img/wallpapertip_innovation-wallpaper-hd_425586.jpg');
-	position: absolute;
-	background-size: cover;
-	z-index: -1;
-	height: 100%;
+@media (max-width: 375px) {
+	.top-box {
+		background: no-repeat bottom
+			url('../img/wallpapertip_innovation-wallpaper-hd_425586.jpg');
+		position: absolute;
+		background-size: cover;
+		z-index: -1;
+		height: 100vh;
+	}
+
+	.box {
+		padding-top: 5%;
+	}
+	.box-shadow {
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+	.about {
+		display: block;
+		padding-top: 5rem;
+		font-size: 2rem;
+	}
+
+	.aboutme-past {
+		position: relative;
+		display: inline-block;
+		font-size: 1.2rem;
+		text-align: left;
+		padding-top: 2%;
+		backdrop-filter: blur(2px);
+	}
+
+	.aboutme-sticker {
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+		font-size: 1.2rem;
+		text-align: right;
+		backdrop-filter: blur(3px);
+	}
+
+	.aboutme-sticker ul {
+		padding-bottom: 2rem;
+	}
+
+	.aboutme-sticker li {
+		position: relative;
+		list-style: none;
+		text-align: right;
+	}
 }
 
-.box {
-	padding-top: 5%;
-}
-.box-shadow {
-	background-color: rgba(255, 255, 255, 0.4);
-}
-.about {
-	display: block;
-}
+@media (min-width: 366px) {
+	div{
+		padding-bottom: 1rem;
+	}
+	.top-box {
+		background: no-repeat bottom
+			url('../img/wallpapertip_innovation-wallpaper-hd_425586.jpg');
+		position: absolute;
+		background-size: cover;
+		z-index: -1;
+		height: 100vh;
+	}
 
-.aboutme-past {
-	position: relative;
-	display: inline-block;
-	width: 25%;
-	right: 20%;
-	font-size: 1.2rem;
-	text-align: left;
-	padding-top: 2%;
-	backdrop-filter: blur(2px);
-}
+	.box {
+		padding-top: 5%;
+	}
+	.box-shadow {
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+	.about {
+		display: block;
+		padding-top: 5rem;
+		font-size: 2rem;
+	}
 
-.aboutme-sticker {
-	display: inline-block;
-	position: relative;
-	width: 25%;
-	left: 20%;
-	vertical-align: top;
-	font-size: 1.2rem;
-	text-align: right;
-	backdrop-filter: blur(3px);
-}
+	.aboutme-past {
+		position: relative;
 
-.aboutme-sticker li {
-	position: relative;
-	list-style: none;
-	text-align: right;
+		font-size: 1.2rem;
+		text-align: center;
+		padding-top: 2%;
+		backdrop-filter: blur(2px);
+	}
+
+	.aboutme-sticker {
+		position: relative;
+		vertical-align: top;
+		font-size: 1.2rem;
+		text-align: center;
+		backdrop-filter: blur(3px);
+	}
+
+	.aboutme-sticker ul {
+		padding-bottom: 2rem;
+	}
+
+	.aboutme-sticker li {
+		position: relative;
+		list-style: none;
+		text-align: center;
+	}
+}
+@media (min-width: 1440px) {
+	.top-box {
+		background: no-repeat bottom
+			url('../img/wallpapertip_innovation-wallpaper-hd_425586.jpg');
+		position: absolute;
+		background-size: cover;
+		z-index: -1;
+		height: 100vh;
+	}
+
+	.box {
+		padding-top: 5%;
+	}
+	.box-shadow {
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+	.about {
+		display: block;
+		padding-top: 1rem;
+		font-size: 2rem;
+	}
+
+	.aboutme-past {
+		position: relative;
+		width: 53%;
+		font-size: 1.1rem;
+		text-align: left;
+		padding-top: 2%;
+		backdrop-filter: blur(2px);
+		display: inline-block;
+		padding-right: 25%;
+	}
+
+	.aboutme-sticker {
+		width: 40%;
+		position: relative;
+		vertical-align: top;
+		font-size: 1.1rem;
+		text-align: right;
+		backdrop-filter: blur(3px);
+		display: inline-block;
+	}
+
+	.aboutme-sticker ul {
+		padding-bottom: 2rem;
+	}
+
+	.aboutme-sticker li {
+		position: relative;
+		list-style: none;
+		text-align: right;
+	}
 }
