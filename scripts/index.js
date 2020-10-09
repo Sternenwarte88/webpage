@@ -1,1 +1,6 @@
-alert('Please note: This page is currently under developement.  Thanks for your patient')
+const modalBtn = document.querySelector('.modal__button');
+const modalBackdrop = document.querySelector('.modal__backdrop')
+
+modalBtn.addEventListener('click', () => {
+    modalBackdrop.style.display = "none";
+})
