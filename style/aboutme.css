@@ -49,8 +49,8 @@
 	}
 }
 
-@media (min-width: 366px) {
-	div{
+@media (min-width: 376px) {
+	div {
 		padding-bottom: 1rem;
 	}
 	.top-box {
