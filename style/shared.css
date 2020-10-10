@@ -59,6 +59,8 @@ div {
 	vertical-align: middle;
 }
 
+
+
 .mobile-nav {
 	display: inline-block;
 	color: white;
@@ -67,14 +69,20 @@ div {
 	margin-left: 30%;
 }
 
+.mobile-container{
+	position: relative;
+	left:20%;
+}
+
 .mobile-main-nav {
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 100vh;
 	width: 80vw;
 	text-align: right;
-	margin-left: 10vw;
+	right: 0;
 	display: none;
-	padding-right: 10%;
+	padding-right: 5%;
+	position: relative;
 }
 
 .mobile-main-nav__items {

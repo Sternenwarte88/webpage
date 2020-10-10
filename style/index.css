@@ -13,13 +13,11 @@
 .modal__content {
 	background: #7ee8fc;
 	font-family: 'PT Sans', sans-serif;
-	display: inline-block;
 	position: relative;
-	margin: 5%;
+	margin: auto;
 	padding: 5%;
 	top: 25vh;
 	text-align: center;
-
 	box-shadow: 0px 1px 20px 10px #9cc6f0;
 }
 
@@ -79,12 +77,12 @@
 
 .showcase-card {
 	background-color: #7ee8fc;
-	width: 80%;
+	width: 100%;
 	text-align: center;
 	vertical-align: middle;
 	box-shadow: 8px 8px 8px 8px #9cc6f0;
-	margin: 15px 25px;
-	padding: 25px;
+	margin: 15px 0px;
+	padding: 25px 0;
 	font-family: 'PT Sans', sans-serif;
 }
 
@@ -206,7 +204,6 @@
 		width: 10rem;
 	}
 
-
 	/* -------------------------------------------------------------------------- */
 	/*                                  Showcase                                  */
 	/* -------------------------------------------------------------------------- */
@@ -237,7 +234,7 @@
 	/* -------------------------------------------------------------------------- */
 
 	.modal__content {
-		margin: 10%;
+		width: 50%;
 	}
 
 	.stack-list {
@@ -273,7 +270,7 @@
 
 	.showcase-card button,
 	.modal__button {
-		height: 2.8rem;
+		height: 4.8rem;
 	}
 
 	/* -------------------------------------------------------------------------- */
@@ -298,7 +295,6 @@
 		height: calc(100% - 3rem);
 	}
 
-
 	.stack-list__item {
 		text-align: center;
 		margin: auto;
@@ -308,11 +304,9 @@
 		width: 16rem;
 	}
 
-
 	/* -------------------------------------------------------------------------- */
 	/*                                  Showcase                                  */
 	/* -------------------------------------------------------------------------- */
-
 
 	.showcase-card {
 		display: inline-block;

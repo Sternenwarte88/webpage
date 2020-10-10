@@ -26,6 +26,7 @@
 	text-align: left;
 	padding-top: 2%;
 	backdrop-filter: blur(2px);
+	margin: 10%;
 }
 
 .aboutme-sticker {
@@ -35,6 +36,7 @@
 	font-size: 1.2rem;
 	text-align: right;
 	backdrop-filter: blur(3px);
+	margin: 0% 10%;
 }
 
 .aboutme-sticker ul {
@@ -60,6 +62,14 @@
 		text-align: center;
 	}
 }
+
+@media (min-width: 768px) {
+	.aboutme-sticker {
+		position: relative;
+		left: 20%;
+	}
+}
+
 @media (min-width: 1440px) {
 	.about {
 		padding-top: 1rem;
@@ -67,13 +77,15 @@
 	}
 
 	.aboutme-past {
-		width: 53%;
+		width: 26%;
 		font-size: 1.1rem;
-		padding-right: 25%;
+		padding-right: 0%;
+		margin: unset;
 	}
 
 	.aboutme-sticker {
-		width: 40%;
+		width: 50%;
 		font-size: 1.1rem;
+		left: unset;
 	}
 }
