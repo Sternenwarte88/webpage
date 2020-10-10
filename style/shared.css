@@ -67,6 +67,32 @@ div {
 	margin-left: 30%;
 }
 
+.mobile-main-nav {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	width: 80vw;
+	text-align: right;
+	margin-left: 10vw;
+	display: none;
+	padding-right: 10%;
+}
+
+.mobile-main-nav__items {
+	list-style: none;
+}
+
+.mobile-nav-link {
+	color: #9cc6f0;
+	text-decoration: none;
+	font-family: 'Grenze Gotisch', cursive;
+	font-size: 1.625rem;
+	padding-bottom: 3px;
+	padding-right: 5px;
+}
+
+.mobile-nav-button {
+}
+
 .main-nav {
 	display: inline-block;
 	right: 10px;
@@ -157,7 +183,7 @@ div {
 	/* -------------------------------------------------------------------------- */
 
 	.mobile-nav {
-		margin-left: 50%;
+		margin-left: 49%;
 	}
 
 	/* -------------------------------------------------------------------------- */
@@ -191,7 +217,7 @@ div {
 	}
 
 	.mobile-nav {
-		margin-left: 70%;
+		display: none;
 	}
 
 	.main-nav__item {
@@ -228,11 +254,9 @@ div {
 		display: inline-block;
 	}
 
-
 	.mobile-nav {
 		display: none;
 	}
-
 
 	/* -------------------------------------------------------------------------- */
 	/*                                   Footer                                   */
@@ -265,11 +289,9 @@ div {
 	/*                                    Head                                    */
 	/* -------------------------------------------------------------------------- */
 
-
 	.brand {
 		font-size: 3rem;
 	}
-
 
 	.main-nav__item {
 		display: inline-block;
@@ -288,4 +310,12 @@ div {
 	.case-law {
 		width: 13%;
 	}
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             JavaScript Classes                             */
+/* -------------------------------------------------------------------------- */
+
+.display-inline-block {
+	display: inline-block;
 }
