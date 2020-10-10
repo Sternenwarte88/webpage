@@ -206,9 +206,6 @@
 		width: 10rem;
 	}
 
-	.main-title {
-		font-size: 3rem;
-	}
 
 	/* -------------------------------------------------------------------------- */
 	/*                                  Showcase                                  */
@@ -272,7 +269,6 @@
 	.showcase-card {
 		width: 33%;
 		margin: 0 25px;
-		display: inline-block;
 	}
 
 	.showcase-card button,
@@ -285,7 +281,6 @@
 	/* -------------------------------------------------------------------------- */
 
 	.features-item {
-		display: inline-block;
 		font-size: large;
 	}
 }
@@ -303,37 +298,23 @@
 		height: calc(100% - 3rem);
 	}
 
-	.stack-list {
-		margin-top: 3.7rem;
-	}
 
 	.stack-list__item {
-		width: 33vw;
 		text-align: center;
 		margin: auto;
 	}
 
 	.stack {
-		height: 17rem;
 		width: 16rem;
 	}
 
-	.main-title {
-		font-size: 3.75rem;
-		margin-bottom: 1.25rem;
-	}
 
 	/* -------------------------------------------------------------------------- */
 	/*                                  Showcase                                  */
 	/* -------------------------------------------------------------------------- */
 
-	.showcase {
-		display: inline-block;
-	}
 
 	.showcase-card {
-		width: 33%;
-		margin: 0 25px;
 		display: inline-block;
 	}
 
@@ -348,6 +329,5 @@
 
 	.features-item {
 		display: inline-block;
-		font-size: large;
 	}
 }
