@@ -3,7 +3,6 @@
 		url('../img/wallpapertip_innovation-wallpaper-hd_425586.jpg');
 	background-size: cover;
 	height: 100vh;
-	
 }
 
 .box {
@@ -63,9 +62,41 @@
 }
 
 @media (min-width: 768px) {
+	.box-shadow {
+		padding-bottom: unset;
+	}
+	.aboutme-past {
+		margin: unset;
+	}
+
 	.aboutme-sticker {
 		position: relative;
 		left: 20%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.box {
+		padding-bottom: 0%;
+	}
+
+	.about {
+		padding: 1rem 0;
+		font-size: 2rem;
+	}
+
+	.aboutme-past {
+		width: 26%;
+		font-size: 1.1rem;
+		padding-right: 0%;
+		margin: unset;
+		left: 2rem;
+	}
+
+	.aboutme-sticker {
+		width: 50%;
+		font-size: 1.1rem;
+		left: 5rem;
 	}
 }
 
@@ -85,6 +116,6 @@
 	.aboutme-sticker {
 		width: 50%;
 		font-size: 1.1rem;
-		left: unset;
+		left: 5rem;
 	}
 }
