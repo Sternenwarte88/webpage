@@ -1,10 +1,9 @@
 .top-box {
 	background: no-repeat bottom
 		url('../img/wallpapertip_innovation-wallpaper-hd_425586.jpg');
-	position: absolute;
 	background-size: cover;
-	z-index: -1;
 	height: 100vh;
+	
 }
 
 .box {
