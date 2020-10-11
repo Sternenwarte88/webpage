@@ -1,0 +1,31 @@
+.top-box {
+	background: no-repeat center url('../img/14727-scaled.jpg');
+	background-size: cover;
+	height: 100vh;
+	padding-bottom: 2rem;
+	filter: blur(6px);
+	z-index: -1;
+	position: fixed;
+}
+
+.blur-box {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.my-stack {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.stack-box {
+	margin: auto;
+	text-align: center;
+	width: 50%;
+	padding-bottom: 4rem;
+}
+
+.stack-box > img {
+	width: 100%;
+}

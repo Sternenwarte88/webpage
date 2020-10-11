@@ -32,11 +32,14 @@
 		url('../img/—Pngtree—simple\ technology\ business\ line_938398-min.jpg');
 	background-size: cover;
 	height: 100vh;
-	padding-bottom: 2rem;
+	width: 100vw;
+	padding-bottom: 1rem;
+	position: fixed;
+	z-index: -1;
 }
 
 .stack-list {
-	margin-top: 4rem;
+	margin-top: 2rem;
 	margin-bottom: 0px;
 	width: 100%;
 	display: inline-block;
