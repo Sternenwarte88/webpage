@@ -24,8 +24,25 @@
 	text-align: center;
 	width: 50%;
 	padding-bottom: 4rem;
+	font-size: 1.5rem;
 }
 
 .stack-box > img {
 	width: 100%;
+}
+
+.react {
+	padding-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+	.stack-box {
+		display: inline-block;
+		width: 40%;
+		margin: 2rem 2rem;
+		vertical-align: middle;
+	}
+	.stack-box > img {
+		width: 75%;
+	}
 }

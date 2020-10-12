@@ -65,11 +65,13 @@ div {
 	font-size: 2rem;
 	width: max-content;
 	margin-left: 30%;
+	vertical-align: middle;
 }
 
 .mobile-container {
 	position: relative;
 	left: 20%;
+	padding-top: 1.2rem;
 }
 
 .mobile-main-nav {
@@ -94,9 +96,6 @@ div {
 	font-size: 1.625rem;
 	padding-bottom: 3px;
 	padding-right: 5px;
-}
-
-.mobile-nav-button {
 }
 
 .main-nav {
@@ -197,7 +196,7 @@ div {
 	/* -------------------------------------------------------------------------- */
 
 	.case-law {
-		width: 38%;
+		width: 27%;
 	}
 }
 
