@@ -67,7 +67,7 @@
 
 .main-title {
 	font-size: 2rem;
-	padding-top: 5rem;
+	padding-top: 3rem;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -250,13 +250,13 @@
 	}
 
 	.stack {
-		height: 17rem;
+		height: 14rem;
 		width: 17rem;
 	}
 
 	.main-title {
 		font-size: 3.75rem;
-		margin-bottom: 1.25rem;
+		margin-bottom: 1rem;
 	}
 
 	/* -------------------------------------------------------------------------- */
