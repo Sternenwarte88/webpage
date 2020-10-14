@@ -82,6 +82,7 @@ div {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	padding: 0 5%;
 }
 
 .mobile-nav-link {
@@ -129,38 +130,39 @@ div {
 .main-footer {
 	position: fixed;
 	bottom: 0px;
-	height: 3rem;
 	width: 100%;
 	background: linear-gradient(
 		rgba(255, 255, 255, 0.7),
 		rgba(109, 109, 109, 0.363),
 		rgba(255, 255, 255, 0.7)
 	);
+	display: flex;
+	justify-content: center;
 }
 
 .footer-list {
-	text-align: center;
-	width: 100%;
+	display: flex;
 	list-style: none;
-	margin-top: 8px;
-	padding: 0;
+	align-items: center;
+	padding-left: 0;
 }
 
 .footer-list__item {
-	width: 20%;
-	display: inline-block;
+	display: flex;
+	width: 36%;
+	justify-content: center;
 }
 
 .footer-link {
+	display: flex;
 	color: black;
 	cursor: grab;
 	position: relative;
+	justify-content: center;
 }
 
 .case-law {
-	height: 50%;
-	width: 45%;
-	vertical-align: bottom;
+	width: 27%;
 	font-size: 2rem;
 }
 
@@ -176,14 +178,13 @@ div {
 	.mobile-nav {
 		margin-left: 49%;
 	}
+	.footer-list__item {
+		justify-content: center;
+	}
 
 	/* -------------------------------------------------------------------------- */
 	/*                                   Footer                                   */
 	/* -------------------------------------------------------------------------- */
-
-	.case-law {
-		width: 27%;
-	}
 }
 
 /* -------------------------------------------------------------------------- */
@@ -222,9 +223,12 @@ div {
 	/* -------------------------------------------------------------------------- */
 	/*                                   Footer                                   */
 	/* -------------------------------------------------------------------------- */
-
+	.footer-link {
+		display: flex;
+		justify-content: center;
+	}
 	.case-law {
-		width: 20%;
+		width: 15%;
 	}
 }
 
@@ -259,11 +263,6 @@ div {
 
 	.footer-list {
 		margin: 8px;
-	}
-
-	.case-law {
-		height: 10%;
-		width: 15%;
 	}
 }
 
@@ -315,7 +314,6 @@ div {
 	display: flex;
 	position: fixed;
 	z-index: 1;
-	flex-direction: column;
 	align-items: center;
 	width: 100%;
 	margin-top: 16%;
