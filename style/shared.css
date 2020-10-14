@@ -23,7 +23,6 @@ body {
 
 div {
 	vertical-align: middle;
-	/* text-align: center; */
 }
 
 .stack-list__item:hover {
@@ -63,12 +62,9 @@ div {
 .mobile-nav {
 	color: white;
 	font-size: 2rem;
-	width: max-content;
-}
-
-.mobile-container {
-	padding-top: 13.2rem;
 	display: flex;
+	flex-grow: 1;
+	justify-content: end;
 }
 
 .mobile-main-nav {
@@ -94,9 +90,6 @@ div {
 	padding-right: 5px;
 }
 
-.main-nav {
-	text-align: right;
-}
 .main-nav__items {
 	display: none;
 	list-style: none;
@@ -127,6 +120,7 @@ div {
 /* -------------------------------------------------------------------------- */
 /*                                   Footer                                   */
 /* -------------------------------------------------------------------------- */
+
 .main-footer {
 	position: fixed;
 	bottom: 0px;
@@ -175,16 +169,9 @@ div {
 	/*                                    Head                                    */
 	/* -------------------------------------------------------------------------- */
 
-	.mobile-nav {
-		margin-left: 49%;
-	}
 	.footer-list__item {
 		justify-content: center;
 	}
-
-	/* -------------------------------------------------------------------------- */
-	/*                                   Footer                                   */
-	/* -------------------------------------------------------------------------- */
 }
 
 /* -------------------------------------------------------------------------- */
