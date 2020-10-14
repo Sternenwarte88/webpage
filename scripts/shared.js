@@ -4,5 +4,5 @@ const mobileMainNav = document.querySelector(".mobile-main-nav");
 mobileNavBtn.addEventListener("click", displayMobileNav )
 
 function displayMobileNav() {
-    mobileMainNav.classList.toggle("display-inline-block")
+    mobileMainNav.classList.toggle("display-flex")
 }

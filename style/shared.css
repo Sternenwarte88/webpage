@@ -45,14 +45,12 @@ div {
 		rgba(0, 0, 0, 0.7)
 	);
 	z-index: 1;
-}
-
-.head-title {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .brand {
-	display: inline-block;
 	font-family: 'Tangerine', cursive;
 	font-size: 2rem;
 	font-weight: bold;
@@ -63,33 +61,27 @@ div {
 }
 
 .mobile-nav {
-	display: inline-block;
 	color: white;
 	font-size: 2rem;
 	width: max-content;
-	margin-left: 30%;
-	vertical-align: middle;
 }
 
 .mobile-container {
-	position: relative;
-	left: 20%;
-	padding-top: 1.2rem;
+	padding-top: 13.2rem;
+	display: flex;
 }
 
 .mobile-main-nav {
 	background-color: rgba(0, 0, 0, 0.5);
-	height: 100vh;
 	width: 80vw;
-	text-align: right;
-	right: 0;
 	display: none;
-	padding-right: 5%;
-	position: relative;
 }
 
 .mobile-main-nav__items {
 	list-style: none;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .mobile-nav-link {
@@ -102,17 +94,10 @@ div {
 }
 
 .main-nav {
-	display: inline-block;
-	right: 1.8rem;
-	top: 22px;
-	position: fixed;
 	text-align: right;
-	vertical-align: middle;
 }
 .main-nav__items {
 	display: none;
-	margin: 0;
-	padding: 0;
 	list-style: none;
 }
 .main-nav__item {
@@ -124,8 +109,6 @@ div {
 	text-decoration: none;
 	font-family: 'Grenze Gotisch', cursive;
 	font-size: 1.625rem;
-	padding-bottom: 3px;
-	padding-right: 5px;
 }
 
 .nav-link:hover {
@@ -328,6 +311,12 @@ div {
 /*                             JavaScript Classes                             */
 /* -------------------------------------------------------------------------- */
 
-.display-inline-block {
-	display: inline-block;
+.display-flex {
+	display: flex;
+	position: fixed;
+	z-index: 1;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 16%;
 }
