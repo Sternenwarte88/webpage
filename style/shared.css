@@ -139,6 +139,7 @@ div {
 	list-style: none;
 	align-items: center;
 	padding-left: 0;
+	height: 1rem;
 }
 
 .footer-list__item {

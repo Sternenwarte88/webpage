@@ -15,7 +15,7 @@
 }
 
 .my-stack {
-	padding-top: 5rem;
+	padding-top: 3rem;
 	text-align: center;
 }
 
@@ -24,7 +24,7 @@
 	text-align: center;
 	width: 50%;
 	padding-bottom: 4rem;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .stack-box > img {
@@ -36,12 +36,21 @@
 }
 
 @media (min-width: 1024px) {
-	.stack-box {
-		display: inline-block;
-		width: 40%;
-		margin: 2rem 2rem;
-		vertical-align: middle;
+	.title {
+		padding: 2rem 0;
+		grid-column-start: 1;
+		grid-column-end: 3;
 	}
+
+	.my-stack {
+		display: grid;
+		grid-template-columns: 50%;
+	}
+
+	.stack-box {
+		width: 80%;
+	}
+
 	.stack-box > img {
 		width: 75%;
 	}
