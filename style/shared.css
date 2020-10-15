@@ -236,10 +236,6 @@ div {
 	/*                                    Head                                    */
 	/* -------------------------------------------------------------------------- */
 
-	.head-title {
-		display: inline-block;
-	}
-
 	.mobile-nav {
 		display: none;
 	}

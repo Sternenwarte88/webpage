@@ -39,11 +39,12 @@
 }
 
 .stack-list {
-	margin-top: 2rem;
+	margin-top: 0;
 	margin-bottom: 0px;
 	width: 100%;
-	display: inline-block;
-	padding: 0;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding: 5rem 0 0 0;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	text-align: center;
@@ -69,6 +70,8 @@
 .main-title {
 	font-size: 2rem;
 	padding-top: 3rem;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -195,14 +198,6 @@
 	/*                               Picture Section                              */
 	/* -------------------------------------------------------------------------- */
 
-	.stack-list {
-		margin-top: 3rem;
-	}
-
-	.stack-list__item {
-		padding-top: 1rem;
-	}
-
 	.stack {
 		height: 9rem;
 		width: 10rem;
@@ -247,10 +242,6 @@
 
 	.modal__content {
 		width: 50%;
-	}
-
-	.stack-list {
-		margin-top: 3.7rem;
 	}
 
 	.stack-list__item {
