@@ -1,0 +1,320 @@
+$color: (
+	bg-color: #7ee8fc,
+	shadow: #9cc6f0,
+);
+/* -------------------------------------------------------------------------- */
+/*                               Picture Section                              */
+/* -------------------------------------------------------------------------- */
+.modal__backdrop {
+	background: rgba(0, 0, 0, 0.4);
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: 200;
+}
+
+.modal__content {
+	background: map-get($color, bg-color);
+	font-family: 'PT Sans', sans-serif;
+	position: relative;
+	margin: auto;
+	padding: 5%;
+	top: 25vh;
+	text-align: center;
+	box-shadow: 0 1px 20px 10px map-get($color, shadow);
+}
+
+.modal__content h1 {
+	font-size: 1.5rem;
+	color: #0e3e75;
+	text-decoration: underline;
+}
+
+.top-box {
+	background: no-repeat bottom
+		url('../img/—Pngtree—simple\ technology\ business\ line_938398-min.jpg');
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	padding-bottom: 1rem;
+	position: fixed;
+	z-index: -1;
+}
+
+.stack-list {
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding: 0;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+	text-align: center;
+}
+
+.stack-list__item {
+	text-align: center;
+	list-style: none;
+}
+
+.stack {
+	text-align: center;
+	height: 6rem;
+	width: 8rem;
+	display: inline-block;
+	margin: auto;
+	padding: 5px 15px;
+}
+
+.main-title {
+	font-size: 2rem;
+	padding-top: 3rem;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Showcase                                  */
+/* -------------------------------------------------------------------------- */
+
+.showcase {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.showcase-card {
+	background-color: map-get($color, bg-color);
+	text-align: center;
+	box-shadow: 8px 8px 8px 8px map-get($color, shadow);
+	margin: 15px 0;
+	padding: 25px 0;
+	font-family: 'PT Sans', sans-serif;
+
+	article {
+		padding: 0;
+	}
+}
+
+.showcase-description-header {
+	font: {
+		size: 1.3rem;
+		family: 'Libre Baskerville', serif;
+	}
+}
+
+.showcase-list {
+	padding: 0;
+}
+
+.showcase-feature {
+	list-style: none;
+	padding: 3px;
+	vertical-align: middle;
+}
+
+.showcase-card button,
+.modal__button {
+	border-radius: 15px;
+	font-family: 'Amaranth', sans-serif;
+	font-size: 1.25rem;
+	border: none;
+	background: #70b1e0;
+	cursor: grab;
+	box-shadow: 10px 10px 10px 10px map-get($color, shadow);
+	padding: 25px;
+	vertical-align: middle;
+}
+
+.action-btn:hover,
+.modal__button:hover {
+	background: #8aaadb;
+	border: #997efc 2px dotted;
+	border-radius: 15px;
+}
+
+.action-btn:active,
+.modal__button:active {
+	background: #6e67db;
+}
+.action-btn:focus,
+.modal__button:focus {
+	outline: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Features                                  */
+/* -------------------------------------------------------------------------- */
+
+.features {
+	margin: 48px 0;
+	padding: 48px 0;
+	background-color: map-get($color, bg-color);
+}
+
+.features-title {
+	text-shadow: 5px 5px 8px 5px white;
+	padding: 8px;
+	padding-bottom: 36px;
+	margin: 8px;
+}
+
+.features-item {
+	display: block;
+	list-style: none;
+	font-family: 'Libre Baskerville', serif;
+	padding: 5px 25px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Media @ 400px>  Mobile-L                    */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 400px) {
+	/* -------------------------------------------------------------------------- */
+	/*                               Picture Section                              */
+	/* -------------------------------------------------------------------------- */
+
+	.stack-list__item {
+		padding-top: 2rem;
+	}
+
+	.stack {
+		height: 8rem;
+		width: 10rem;
+	}
+
+	.main-title {
+		font-size: 3rem;
+		padding-top: 4rem;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            @Media <768px Tablet                            */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+	/* -------------------------------------------------------------------------- */
+	/*                               Picture Section                              */
+	/* -------------------------------------------------------------------------- */
+
+	.stack {
+		height: 9rem;
+		width: 10rem;
+	}
+
+	.stack-list__item {
+		padding: 0.75rem 0;
+	}
+
+	/* -------------------------------------------------------------------------- */
+	/*                                  Showcase                                  */
+	/* -------------------------------------------------------------------------- */
+
+	.showcase {
+		justify-content: space-around;
+		flex-direction: row;
+	}
+	.showcase-card {
+		width: 43%;
+		article {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	/* -------------------------------------------------------------------------- */
+	/*                                  Features                                  */
+	/* -------------------------------------------------------------------------- */
+
+	.features-item {
+		display: inline-block;
+		width: 44%;
+		text-align: center;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               @Media @1024px>                              */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+	/* -------------------------------------------------------------------------- */
+	/*                               Picture Section                              */
+	/* -------------------------------------------------------------------------- */
+
+	.modal__content {
+		width: 50%;
+	}
+
+	.stack {
+		height: 14rem;
+		width: 17rem;
+	}
+
+	.main-title {
+		font-size: 3.75rem;
+		margin-bottom: 1rem;
+	}
+
+	/* -------------------------------------------------------------------------- */
+	/*                                  Showcase                                  */
+	/* -------------------------------------------------------------------------- */
+
+	.showcase-card {
+		width: 33%;
+		margin: 0 25px;
+	}
+
+	.showcase-card button,
+	.modal__button {
+		height: 4.8rem;
+	}
+
+	/* -------------------------------------------------------------------------- */
+	/*                                  Features                                  */
+	/* -------------------------------------------------------------------------- */
+
+	.features-item {
+		font-size: large;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               @Media @1400px>                              */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1440px) {
+	/* -------------------------------------------------------------------------- */
+	/*                               Picture Section                              */
+	/* -------------------------------------------------------------------------- */
+
+	.stack-list__item {
+		text-align: center;
+		margin: auto;
+	}
+
+	.stack {
+		width: 16rem;
+	}
+
+	/* -------------------------------------------------------------------------- */
+	/*                                  Showcase                                  */
+	/* -------------------------------------------------------------------------- */
+
+	.showcase-card button,
+	.modal__button {
+		height: 4.8rem;
+	}
+
+	/* -------------------------------------------------------------------------- */
+	/*                                  Features                                  */
+	/* -------------------------------------------------------------------------- */
+
+	.features-item {
+		display: inline-block;
+	}
+}
