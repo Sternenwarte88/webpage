@@ -23,7 +23,7 @@
   border-bottom-right-radius: 100%; }
 
 .text-box {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   width: 90vw;
   text-align: center; }
 
@@ -35,9 +35,6 @@
   .stack-box img {
     width: 100%; }
 
-.react {
-  padding-top: 3rem; }
-
 @media (min-width: 1024px) {
   .title {
     padding: 2rem 0;
@@ -46,21 +43,27 @@
 
   .stack-box__timeline {
     width: 100%;
-    padding-top: 5%; }
+    padding-top: 5%;
+    grid-column: span 2; }
+
+  h2 {
+    margin: 3rem 0;
+    text-shadow: 5px 5px 8px #88abf7; }
 
   .stack-box {
     width: 100%; }
     .stack-box img {
-      width: 25%; }
+      width: 40%;
+      padding: 5% 0; }
 
   .my-stack__gridbox {
     display: grid;
-    justify-items: center; }
-
-  .stack-box img {
-    padding: 5% 0; }
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, 50%);
+    align-items: center; }
 
   .text-box {
-    width: 50%; } }
+    width: 50%;
+    margin: 7% 2%; } }
 
 /*# sourceMappingURL=mystack.css.map */
