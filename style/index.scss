@@ -22,12 +22,12 @@ $color: (
 	top: 25vh;
 	text-align: center;
 	box-shadow: 0 1px 20px 10px map-get($color, shadow);
-}
 
-.modal__content h1 {
-	font-size: 1.5rem;
-	color: #0e3e75;
-	text-decoration: underline;
+	h1 {
+		font-size: 1.5rem;
+		color: #0e3e75;
+		text-decoration: underline;
+	}
 }
 
 .top-box {
@@ -250,9 +250,17 @@ $color: (
 		width: 50%;
 	}
 
+	.main-title {
+		grid-column-end: 4;
+	}
+
 	.stack {
 		height: 14rem;
 		width: 17rem;
+	}
+
+	.stack-list {
+		grid-template-columns: auto auto auto;
 	}
 
 	.main-title {

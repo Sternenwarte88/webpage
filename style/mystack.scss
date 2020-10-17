@@ -15,20 +15,31 @@
 }
 
 .my-stack {
-	padding-top: 3rem;
+	text-align: center;
+}
+
+.border {
+	height: 3rem;
+	border-bottom: #88abf7;
+	border-bottom-style: dotted;
+	border-bottom-left-radius: 25%;
+	border-bottom-right-radius: 100%;
+}
+
+.text-box {
+	margin: 0 auto;
+	width: 90vw;
 	text-align: center;
 }
 
 .stack-box {
-	margin: auto;
 	text-align: center;
-	width: 50%;
-	padding-bottom: 4rem;
-	font-size: 1.2rem;
-}
-
-.stack-box > img {
 	width: 100%;
+	padding: 3rem;
+	font-size: 1.2rem;
+	img {
+		width: 100%;
+	}
 }
 
 .react {
@@ -39,19 +50,31 @@
 	.title {
 		padding: 2rem 0;
 		grid-column-start: 1;
-		grid-column-end: 3;
+		grid-column-end: span 3;
 	}
 
-	.my-stack {
-		display: grid;
-		grid-template-columns: 50%;
+	.stack-box__timeline {
+		width: 100%;
+		padding-top: 5%;
 	}
 
 	.stack-box {
-		width: 80%;
+		width: 100%;
+		img {
+			width: 25%;
+		}
+	}
+	.my-stack__gridbox {
+		display: grid;
+		justify-items: center;
 	}
 
-	.stack-box > img {
-		width: 75%;
+	.stack-box{
+		img{
+			padding: 5% 0;
+		}
+	}
+	.text-box {
+		width: 50%;
 	}
 }

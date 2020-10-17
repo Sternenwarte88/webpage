@@ -18,11 +18,10 @@
   top: 25vh;
   text-align: center;
   box-shadow: 0 1px 20px 10px #9cc6f0; }
-
-.modal__content h1 {
-  font-size: 1.5rem;
-  color: #0e3e75;
-  text-decoration: underline; }
+  .modal__content h1 {
+    font-size: 1.5rem;
+    color: #0e3e75;
+    text-decoration: underline; }
 
 .top-box {
   background: no-repeat bottom url("../img/—Pngtree—simple technology business line_938398-min.jpg");
@@ -200,9 +199,15 @@
   .modal__content {
     width: 50%; }
 
+  .main-title {
+    grid-column-end: 4; }
+
   .stack {
     height: 14rem;
     width: 17rem; }
+
+  .stack-list {
+    grid-template-columns: auto auto auto; }
 
   .main-title {
     font-size: 3.75rem;
