@@ -36,23 +36,18 @@
 	text-align: right;
 	backdrop-filter: blur(3px);
 	margin: 0% 10%;
-}
 
-.aboutme-sticker ul {
-	padding-bottom: 2rem;
-}
-
-.aboutme-sticker li {
-	position: relative;
-	list-style: none;
-	text-align: right;
+	ul {
+		padding-bottom: 2rem;
+	}
+	li {
+		position: relative;
+		list-style: none;
+		text-align: right;
+	}
 }
 
 @media (min-width: 376px) {
-	div {
-		padding-bottom: 1rem;
-	}
-
 	.aboutme-past {
 		text-align: center;
 	}
