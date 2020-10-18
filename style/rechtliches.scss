@@ -1,0 +1,38 @@
+$colors: (
+	main_text: #9cc6f0,
+	text_darker_blue: #88abf7,
+);
+
+.top-box {
+	background: no-repeat bottom
+		url('../img/wallpapertip_internet-wallpaper_1255703.jpg');
+	opacity: 0.6;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	padding-bottom: 1rem;
+	position: fixed;
+	z-index: -1;
+	filter: blur(3px);
+}
+
+a {
+	color: map-get($colors, text_darker_blue);
+	text-decoration: none;
+	font: {
+		family: 'Grenze Gotisch', cursive;
+		size: 1.625rem;
+	}
+	&:hover {
+		color: map-get($colors, text_darker_blue);
+		border: {
+			bottom: map-get($colors, text_darker_blue);
+			bottom-style: dotted;
+			bottom-left-radius: 15%;
+			bottom-right-radius: 15%;
+		}
+	}
+	&:active {
+		color: #5e76ab;
+	}
+}

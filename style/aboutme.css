@@ -3,10 +3,8 @@
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  position: fixed; }
-
-.box-shadow {
-  background-color: rgba(255, 255, 255, 0.4); }
+  position: fixed;
+  filter: blur(3px); }
 
 .about {
   display: block;
@@ -21,7 +19,6 @@
   font-size: 1.2rem;
   text-align: left;
   padding-top: 2%;
-  backdrop-filter: blur(2px);
   margin: 10%; }
 
 .aboutme-sticker {
@@ -30,7 +27,6 @@
   vertical-align: top;
   font-size: 1.2rem;
   text-align: right;
-  backdrop-filter: blur(3px);
   margin: 0% 10%; }
   .aboutme-sticker ul {
     padding-bottom: 2rem; }
@@ -46,9 +42,6 @@
   .aboutme-sticker {
     text-align: center; } }
 @media (min-width: 768px) {
-  .box-shadow {
-    padding-bottom: unset; }
-
   .aboutme-past {
     margin: unset; }
 
@@ -61,33 +54,32 @@
 
   .about {
     padding-top: 7rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     font-size: 2rem; }
 
   .aboutme-past {
-    width: 26%;
     font-size: 1.1rem;
-    padding-right: 0%;
-    margin: unset;
-    left: 2rem; }
+    padding-right: 0%; }
 
   .aboutme-sticker {
-    width: 50%;
     font-size: 1.1rem;
-    left: 5rem; } }
+    grid-column-start: 3;
+    grid-column-end: 4;
+    left: 0; }
+    .aboutme-sticker ul {
+      padding-bottom: 0; }
+
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+    align-items: center; } }
 @media (min-width: 1440px) {
   .about {
-    font-size: 2rem; }
+    padding-top: 3%; }
 
-  .aboutme-past {
-    width: 26%;
-    font-size: 1.1rem;
-    padding-right: 0%;
-    margin: unset; }
-
+  .aboutme-past,
   .aboutme-sticker {
-    width: 50%;
-    font-size: 1.1rem;
-    left: 5rem; } }
+    font-size: 1.1rem; } }
 
 /*# sourceMappingURL=aboutme.css.map */
