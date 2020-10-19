@@ -1,0 +1,25 @@
+.background_image {
+	background: no-repeat bottom url('../img/1445478.jpg');
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	padding-bottom: 1rem;
+	position: fixed;
+	z-index: -1;
+	filter: blur(3px);
+}
+
+.title {
+	display: block;
+	margin-top: 3.5rem;
+}
+
+.aboutme-past {
+	background-color: rgba($color: white, $alpha: 0.7);
+	box-shadow: 0 10px 12px 23px rgba(2, 44, 64, 0.58);
+	font: {
+		size: 1.2rem;
+	}
+	padding: 2%;
+	margin: 10%;
+}
