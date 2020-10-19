@@ -64,7 +64,7 @@ div {
   font-size: 2rem;
   display: flex;
   flex-grow: 1;
-  justify-content: end; }
+  justify-content: flex-end; }
 
 .mobile-main-nav {
   background-color: rgba(0, 0, 0, 0.6);
