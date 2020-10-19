@@ -13,6 +13,7 @@
 		<title>Stephan Löcher - Ihr Web-Developer</title>
 	</head>
 	<body>
+		<!-- --------------------------------- navbar --------------------------------- -->
 		<header class="main-header">
 			<div class="head-title">
 				<a class="brand" href="index.html">Stephan Löcher</a>
@@ -20,12 +21,25 @@
 			<nav class="mobile-nav"><i class="fas fa-bars" type="button"></i></nav>
 			<nav class="main-nav">
 				<ul class="main-nav__items">
-					<li class="main-nav__item">
-						<a class="nav-link" href="./aboutme.html">About me</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="nav-link" href="./mystack.html">My Stack & Roadmap</a>
-					</li>
+					<div class="dropdown">
+						<button class="dropbtn">
+							About me <i class="fa fa-caret-down" aria-hidden="true"></i>
+						</button>
+						<div class="dropdown-content">
+							<a class="nav-link" href="./aboutme.html">Aboutme</a>
+							<a class="nav-link" href="./personality.html"
+								>My&nbsp;personality</a
+							>
+							<a class="nav-link" href="./philosophy.html"
+								>My&nbsp;Philosophy</a
+							>
+							<a class="nav-link" href="./mystack.html"
+								>My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a
+							>
+							<a class="nav-link" href="./skills.html">My&nbsp;Skills</a>
+							<a class="nav-link" href="./languages.html">My&nbsp;Languages</a>
+						</div>
+					</div>
 					<li class="main-nav__item">
 						<a class="nav-link" href="./connect.html">Get connected</a>
 					</li>
@@ -35,16 +49,36 @@
 				</ul>
 			</nav>
 		</header>
+
+		<!-- ----------------------------- mobile nav ------------------------------ -->
+
 		<nav class="mobile-main-nav">
 			<ul class="mobile-main-nav__items">
-				<li class="mobile-main-nav__item">
-					<a class="mobile-nav-link" href="./aboutme.html">About me</a>
-				</li>
-				<li class="mobile-main-nav__item">
-					<a class="mobile-nav-link" href="./mystack.html"
-						>My Stack & Roadmap</a
-					>
-				</li>
+				<div class="dropdown">
+					<button class="dropbtn mobile">
+						About me <i class="fa fa-caret-down" aria-hidden="true"></i>
+					</button>
+					<div class="dropdown-content mobile-content">
+						<a class="mobile-nav-link__dropdown" href="./aboutme.html"
+							>About&nbsp;me</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./personality.html"
+							>My&nbsp;personality</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./philosophy.html"
+							>My&nbsp;Philosophy</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./mystack.html"
+							>My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./skills.html"
+							>My&nbsp;Skills</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./languages.html"
+							>My&nbsp;Languages</a
+						>
+					</div>
+				</div>
 				<li class="mobile-main-nav__item">
 					<a class="mobile-nav-link" href="./connected.html">Get connected</a>
 				</li>
@@ -53,31 +87,38 @@
 				</li>
 			</ul>
 		</nav>
+
+		<!-- -------------------------------- form --------------------------------- -->
+
 		<main>
-            <section class="top-box"></section>
-            <div class="container">
-			<form class="formelement"
-				action="mailto:s.loecher.slc@gmail.com"
-				method="post"
-				enctype="text/plain"
-            >
-            <label for="gender">Title:</label>
-            <select name="gender">
-                <option value="Herr">Herr</option>
-                <option value="Frau">Frau</option>
-            </select>
-				<label for="FName">Vorname:</label>
-				<input type="text" name="FName" value="" />
-				<label for="LName">Nachname:</label>
-				<input type="text" name="LName" value="" />
-				<label for="E-Mail">E-Mail:</label>
-				<input type="email" name="E-Mail" />
-				<label for="message">Ihre Nachricht:</label>
-                <textarea type="text" name="message"></textarea>
-                <button type="submit">Ab die Post!</button>
-            </form>
-        </div>
+			<section class="top-box"></section>
+			<div class="container">
+				<form
+					class="formelement"
+					action="mailto:s.loecher.slc@gmail.com"
+					method="post"
+					enctype="text/plain"
+				>
+					<label for="gender">Title:</label>
+					<select name="gender">
+						<option value="Herr">Herr</option>
+						<option value="Frau">Frau</option>
+					</select>
+					<label for="FName">Vorname:</label>
+					<input type="text" name="FName" value="" />
+					<label for="LName">Nachname:</label>
+					<input type="text" name="LName" value="" />
+					<label for="E-Mail">E-Mail:</label>
+					<input type="email" name="E-Mail" />
+					<label for="message">Ihre Nachricht:</label>
+					<textarea type="text" name="message"></textarea>
+					<button type="submit">Ab die Post!</button>
+				</form>
+			</div>
 		</main>
+
+		<!-- ------------------------------- footer -------------------------------- -->
+
 		<footer class="main-footer">
 			<ul class="footer-list">
 				<li class="footer-list__item">

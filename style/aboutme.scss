@@ -13,16 +13,7 @@
 	font-size: 2rem;
 	position: relative;
 	margin: 0;
-	padding-top: 20%;
-}
-
-.aboutme-past {
-	position: relative;
-	display: inline-block;
-	font-size: 1.2rem;
-	text-align: left;
-	padding-top: 2%;
-	margin: 10%;
+	padding-top: 3.5rem;
 }
 
 .aboutme-sticker {
@@ -30,8 +21,6 @@
 	position: relative;
 	vertical-align: top;
 	font-size: 1.2rem;
-	text-align: right;
-	margin: 0% 10%;
 
 	ul {
 		padding-bottom: 2rem;
@@ -39,25 +28,10 @@
 	li {
 		position: relative;
 		list-style: none;
-		text-align: right;
-	}
-}
-
-@media (min-width: 376px) {
-	.aboutme-past {
-		text-align: center;
-	}
-
-	.aboutme-sticker {
-		text-align: center;
 	}
 }
 
 @media (min-width: 768px) {
-	.aboutme-past {
-		margin: unset;
-	}
-
 	.aboutme-sticker {
 		position: relative;
 		left: 20%;
@@ -73,11 +47,6 @@
 		padding-top: 7rem;
 		padding-bottom: 0rem;
 		font-size: 2rem;
-	}
-
-	.aboutme-past {
-		font-size: 1.1rem;
-		padding-right: 0%;
 	}
 
 	.aboutme-sticker {
@@ -101,8 +70,6 @@
 	.about {
 		padding-top: 3%;
 	}
-
-	.aboutme-past,
 	.aboutme-sticker {
 		font-size: 1.1rem;
 	}

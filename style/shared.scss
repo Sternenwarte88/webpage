@@ -82,6 +82,10 @@ div {
 	vertical-align: middle;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                 mobile nav                                 */
+/* -------------------------------------------------------------------------- */
+
 .mobile-nav {
 	color: white;
 	font-size: 2rem;
@@ -91,7 +95,7 @@ div {
 }
 
 .mobile-main-nav {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	width: 80vw;
 	display: none;
 }
@@ -109,13 +113,56 @@ div {
 	text-decoration: none;
 	font: {
 		family: 'Grenze Gotisch', cursive;
-		size: 1.625rem;
+		size: 1.2rem;
 	}
 	padding: {
 		bottom: 3px;
-		right: 5px;
+		right: 0.5rem;
 	}
 }
+
+.mobile-nav-link__dropdown {
+	@extend .mobile-nav-link;
+	padding: 1rem 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Dropdown                                  */
+/* -------------------------------------------------------------------------- */
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	.dropbtn {
+		color: map-get($colors, text_darker_blue);
+		text-decoration: none;
+		background-color: inherit;
+		border: none;
+		font: {
+			family: 'Grenze Gotisch', cursive;
+			size: 1.2rem;
+		}
+		padding: {
+			bottom: 3px;
+			right: 0.5rem;
+		}
+		cursor: pointer;
+	}
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	min-width: 10rem;
+	z-index: 1;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  main nav                                  */
+/* -------------------------------------------------------------------------- */
 
 .main-nav__items {
 	display: none;
@@ -128,6 +175,7 @@ div {
 .nav-link {
 	color: map-get($colors, text_darker_blue);
 	text-decoration: none;
+	margin: 2rem;
 	font: {
 		family: 'Grenze Gotisch', cursive;
 		size: 1.625rem;
@@ -239,6 +287,9 @@ div {
 		display: inline-block;
 	}
 
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
 	/* -------------------------------------------------------------------------- */
 	/*                                   Footer                                   */
 	/* -------------------------------------------------------------------------- */
@@ -331,6 +382,15 @@ div {
 	z-index: 1;
 	align-items: center;
 	width: 100%;
-	margin-top: 16%;
-	
+	margin-top: 3.5rem;
+}
+
+.display-block {
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	align-items: center;
+	width: 100%;
+	right: 0;
+	margin-top: 1rem;
 }

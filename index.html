@@ -13,6 +13,8 @@
 		<title>Stephan Löcher - Ihr Web-Developer</title>
 	</head>
 	<body>
+		<!-- -------------------------------- modal -------------------------------- -->
+
 		<div class="modal__backdrop">
 			<div class="modal__content">
 				<h1>Please Note:</h1>
@@ -21,6 +23,9 @@
 				<button class="modal__button">Continue</button>
 			</div>
 		</div>
+
+		<!-- ------------------------------- nav bar ------------------------------- -->
+
 		<header class="main-header">
 			<div class="head-title">
 				<a class="brand" href="index.html">Stephan Löcher</a>
@@ -28,12 +33,25 @@
 			<nav class="mobile-nav"><i class="fas fa-bars" type="button"></i></nav>
 			<nav class="main-nav">
 				<ul class="main-nav__items">
-					<li class="main-nav__item">
-						<a class="nav-link" href="./aboutme.html">About me</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="nav-link" href="./mystack.html">My Stack & Roadmap</a>
-					</li>
+					<div class="dropdown">
+						<button class="dropbtn">
+							About me <i class="fa fa-caret-down" aria-hidden="true"></i>
+						</button>
+						<div class="dropdown-content">
+							<a class="nav-link" href="./aboutme.html">Aboutme</a>
+							<a class="nav-link" href="./personality.html"
+								>My&nbsp;personality</a
+							>
+							<a class="nav-link" href="./philosophy.html"
+								>My&nbsp;Philosophy</a
+							>
+							<a class="nav-link" href="./mystack.html"
+								>My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a
+							>
+							<a class="nav-link" href="./skills.html">My&nbsp;Skills</a>
+							<a class="nav-link" href="./languages.html">My&nbsp;Languages</a>
+						</div>
+					</div>
 					<li class="main-nav__item">
 						<a class="nav-link" href="./connect.html">Get connected</a>
 					</li>
@@ -43,16 +61,36 @@
 				</ul>
 			</nav>
 		</header>
+
+		<!-- ----------------------------- mobile nav ------------------------------ -->
+
 		<nav class="mobile-main-nav">
 			<ul class="mobile-main-nav__items">
-				<li class="mobile-main-nav__item">
-					<a class="mobile-nav-link" href="./aboutme.html">About me</a>
-				</li>
-				<li class="mobile-main-nav__item">
-					<a class="mobile-nav-link" href="./mystack.html"
-						>My Stack & Roadmap</a
-					>
-				</li>
+				<div class="dropdown">
+					<button class="dropbtn mobile">
+						About me <i class="fa fa-caret-down" aria-hidden="true"></i>
+					</button>
+					<div class="dropdown-content mobile-content">
+						<a class="mobile-nav-link__dropdown" href="./aboutme.html"
+							>About&nbsp;me</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./personality.html"
+							>My&nbsp;personality</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./philosophy.html"
+							>My&nbsp;Philosophy</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./mystack.html"
+							>My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./skills.html"
+							>My&nbsp;Skills</a
+						>
+						<a class="mobile-nav-link__dropdown" href="./languages.html"
+							>My&nbsp;Languages</a
+						>
+					</div>
+				</div>
 				<li class="mobile-main-nav__item">
 					<a class="mobile-nav-link" href="./connected.html">Get connected</a>
 				</li>
@@ -61,6 +99,9 @@
 				</li>
 			</ul>
 		</nav>
+
+		<!-- ---------------------------- main section ----------------------------- -->
+
 		<main>
 			<section class="top-box"></section>
 			<div>
@@ -98,6 +139,8 @@
 					</li>
 				</ul>
 			</div>
+
+			<!-- ------------------------------ showcase ------------------------------- -->
 
 			<section>
 				<div>
@@ -144,6 +187,9 @@
 					</article>
 				</div>
 			</section>
+
+			<!-- ------------------------------ features ------------------------------- -->
+
 			<section class="features">
 				<div>
 					<h1 class="title features-title">Meine besonderen Eigenschaften</h1>
@@ -172,6 +218,9 @@
 				</div>
 			</section>
 		</main>
+
+		<!-- ------------------------------- footer -------------------------------- -->
+
 		<footer class="main-footer">
 			<ul class="footer-list">
 				<li class="footer-list__item">

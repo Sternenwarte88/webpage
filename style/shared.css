@@ -56,6 +56,9 @@ div {
   padding: 10px;
   vertical-align: middle; }
 
+/* -------------------------------------------------------------------------- */
+/*                                 mobile nav                                 */
+/* -------------------------------------------------------------------------- */
 .mobile-nav {
   color: white;
   font-size: 2rem;
@@ -64,7 +67,7 @@ div {
   justify-content: end; }
 
 .mobile-main-nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 80vw;
   display: none; }
 
@@ -75,14 +78,44 @@ div {
   justify-content: space-between;
   padding: 0 5%; }
 
-.mobile-nav-link {
+.mobile-nav-link, .mobile-nav-link__dropdown {
   color: #88abf7;
   text-decoration: none;
   font-family: 'Grenze Gotisch', cursive;
-  font-size: 1.625rem;
+  font-size: 1.2rem;
   padding-bottom: 3px;
-  padding-right: 5px; }
+  padding-right: 0.5rem; }
 
+.mobile-nav-link__dropdown {
+  padding: 1rem 0; }
+
+/* -------------------------------------------------------------------------- */
+/*                                  Dropdown                                  */
+/* -------------------------------------------------------------------------- */
+.dropdown {
+  float: left;
+  overflow: hidden; }
+  .dropdown .dropbtn {
+    color: #88abf7;
+    text-decoration: none;
+    background-color: inherit;
+    border: none;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+    padding-right: 0.5rem;
+    cursor: pointer; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-width: 10rem;
+  z-index: 1; }
+
+/* -------------------------------------------------------------------------- */
+/*                                  main nav                                  */
+/* -------------------------------------------------------------------------- */
 .main-nav__items {
   display: none;
   list-style: none; }
@@ -93,6 +126,7 @@ div {
 .nav-link {
   color: #88abf7;
   text-decoration: none;
+  margin: 2rem;
   font-family: 'Grenze Gotisch', cursive;
   font-size: 1.625rem; }
   .nav-link:hover {
@@ -174,6 +208,9 @@ div {
   .main-nav__items {
     display: inline-block; }
 
+  .dropdown:hover .dropdown-content {
+    display: block; }
+
   /* -------------------------------------------------------------------------- */
   /*                                   Footer                                   */
   /* -------------------------------------------------------------------------- */
@@ -242,6 +279,15 @@ div {
   z-index: 1;
   align-items: center;
   width: 100%;
-  margin-top: 16%; }
+  margin-top: 3.5rem; }
+
+.display-block {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
+  right: 0;
+  margin-top: 1rem; }
 
 /*# sourceMappingURL=shared.css.map */
