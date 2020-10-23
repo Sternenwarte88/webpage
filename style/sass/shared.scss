@@ -131,8 +131,6 @@ div {
 /* -------------------------------------------------------------------------- */
 
 .dropdown {
-	float: left;
-	overflow: hidden;
 	.dropbtn {
 		color: map-get($colors, text_darker_blue);
 		text-decoration: none;
@@ -140,7 +138,7 @@ div {
 		border: none;
 		font: {
 			family: 'Grenze Gotisch', cursive;
-			size: 1.2rem;
+			size: 1.5rem;
 		}
 		padding: {
 			bottom: 3px;
@@ -156,6 +154,7 @@ div {
 	background-color: rgba(0, 0, 0, 0.6);
 	min-width: 10rem;
 	z-index: 1;
+	width: 100vw;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -176,7 +175,7 @@ div {
 	margin: 2rem;
 	font: {
 		family: 'Grenze Gotisch', cursive;
-		size: 1.625rem;
+		size: 1.5rem;
 	}
 	&:hover {
 		color: map-get($colors, text_darker_blue);
@@ -286,7 +285,12 @@ div {
 	}
 
 	.dropdown:hover .dropdown-content {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+		align-items: center;
+		width: 100vw;
+		right: 0;
 	}
 	/* -------------------------------------------------------------------------- */
 	/*                                   Footer                                   */
@@ -388,7 +392,7 @@ div {
 	flex-direction: column;
 	z-index: 1;
 	align-items: center;
-	width: 100%;
+	width: 100vw;
 	right: 0;
 	margin-top: 1rem;
 }
