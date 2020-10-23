@@ -24,7 +24,7 @@
   .formelement select {
     margin: 3% 0; }
 
-button {
+.submit.btn {
   border-radius: 15px;
   font-family: 'Amaranth', sans-serif;
   font-size: 1.25rem;

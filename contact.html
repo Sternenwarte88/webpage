@@ -4,13 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style/shared.css" />
-		<link rel="stylesheet" href="./style/connect.css" />
+		<link rel="stylesheet" href="./style/contact.css" />
 		<script
 			src="https://kit.fontawesome.com/d3c40689e8.js"
 			defer
 			crossorigin="anonymous"
 		></script>
-		<script src="./scripts/inspectled.js"> </script>
+		<script src="./scripts/inspectled.js"></script>
 		<title>Stephan Löcher - Ihr Web-Developer</title>
 	</head>
 	<body>
@@ -57,7 +57,45 @@
 						<a class="nav-link" href="./rechtliches.html">Rechtliches</a>
 					</li> -->
 			</nav>
-			</header>
+
+			<!-- ----------------------------- mobile nav ------------------------------ -->
+
+			<nav class="mobile-main-nav">
+				<ul class="mobile-main-nav__items">
+					<div class="dropdown">
+						<button class="dropbtn mobile">
+							About me <i class="fa fa-caret-down" aria-hidden="true"></i>
+						</button>
+						<div class="dropdown-content mobile-content">
+							<a class="mobile-nav-link__dropdown" href="./aboutme.html"
+								>About&nbsp;me</a
+							>
+							<a class="mobile-nav-link__dropdown" href="./mystack.html"
+								>My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a
+							>
+							<a class="mobile-nav-link__dropdown" href="./personality.html"
+								>My&nbsp;personality</a
+							>
+							<a class="mobile-nav-link__dropdown" href="./skills.html"
+								>My&nbsp;Skills</a
+							>
+							<a class="mobile-nav-link__dropdown" href="./languages.html"
+								>My&nbsp;Languages</a
+							>
+							<a class="mobile-nav-link__dropdown" href="./philosophy.html"
+								>My&nbsp;Philosophy</a
+							>
+						</div>
+					</div>
+					<a class="mobile-nav-link" href="./question.html"></a>
+					<a class="mobile-nav-link" href="./contact.html">Contact me</a>
+
+					<!-- <li class="mobile-main-nav__item">
+					<a class="mobile-nav-link" href="./rechtliches.html">Rechtliches</a>
+				</li> -->
+				</ul>
+			</nav>
+		</header>
 
 		<!-- -------------------------------- form --------------------------------- -->
 
@@ -83,7 +121,7 @@
 					<input type="email" name="E-Mail" />
 					<label for="message">Ihre Nachricht:</label>
 					<textarea type="text" name="message"></textarea>
-					<button type="submit">Ab die Post!</button>
+					<button class="submit-btn" type="submit">Ab die Post!</button>
 				</form>
 			</div>
 		</main>
