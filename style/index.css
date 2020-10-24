@@ -225,13 +225,16 @@
   .text-box__half-wide p:last-of-type {
     margin-bottom: 3rem; }
 
+  .button_container {
+    text-align: center; }
+
   .button_contact {
-    margin-left: 25rem;
-    margin-top: 2rem;
     padding: 1rem;
     color: black;
     background: #cadfff;
-    border-radius: 50%; }
+    border-radius: 50%;
+    display: inline-block;
+    position: center; }
 
   /* -------------------------------------------------------------------------- */
   /*                                  Showcase                                  */

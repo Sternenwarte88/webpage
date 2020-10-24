@@ -137,7 +137,6 @@ $color: (
 .button_contact:hover {
 	background: #8aaadb;
 	border: #997efc 2px dotted;
-	
 }
 
 .action-btn:active,
@@ -280,15 +279,17 @@ $color: (
 		margin-bottom: 3rem;
 	}
 
+.button_container{
+	text-align: center;
+}
+
 	.button_contact {
-		margin: {
-			left: 25rem;
-			top: 2rem;
-		}
 		padding: 1rem;
 		color: black;
 		background: #cadfff;
 		border-radius: 50%;
+		display: inline-block;
+		position: center;
 	}
 
 	/* -------------------------------------------------------------------------- */
