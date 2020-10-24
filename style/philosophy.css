@@ -10,13 +10,13 @@
 
 .title {
   display: block;
-  margin-top: 3.5rem; }
+  padding: 0; }
 
 .aboutme-past {
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 10px 12px 23px rgba(2, 44, 64, 0.58);
   font-size: 1.2rem;
   padding: 2%;
-  margin: 10%; }
+  margin: 2%; }
 
 /*# sourceMappingURL=philosophy.css.map */

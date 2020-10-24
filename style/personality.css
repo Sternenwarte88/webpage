@@ -13,10 +13,14 @@
   box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.56);
   margin: 1rem 3rem; }
 
+.title {
+  padding: 0; }
+
 .text-box {
   background-color: rgba(124, 203, 235, 0.56);
   box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.56);
   font-size: 1.2rem;
-  margin: 1rem 3rem; }
+  margin: 1rem 3rem;
+  text-align: left; }
 
 /*# sourceMappingURL=personality.css.map */

@@ -62,6 +62,23 @@
   grid-column-start: 1;
   grid-column-end: 3; }
 
+.text-box__half-wide {
+  padding-top: 4.875rem;
+  grid-template-columns: repeat(6, 16.6%);
+  padding: 0 1.6rem;
+  text-align: left;
+  background-color: rgba(124, 203, 235, 0.26);
+  box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.26);
+  margin-top: 3rem; }
+
+.button_contact {
+  margin: 0 2rem;
+  color: black;
+  display: inline-block; }
+
+.button_container {
+  text-align: center; }
+
 /* -------------------------------------------------------------------------- */
 /*                                  Showcase                                  */
 /* -------------------------------------------------------------------------- */
@@ -197,44 +214,32 @@
       right: 1.675rem; }
 
   .main-title {
-    grid-column-end: 7;
+    grid-column-end: 9;
     text-align: left;
     font-size: 3rem;
-    margin: 0;
-    padding: 1.875rem; }
+    margin: 0; }
+
+  .stack {
+    width: 9rem;
+    height: 9rem;
+    padding: unset; }
 
   .stack-list {
-    grid-template-columns: repeat(6, 16.6%);
-    padding-left: 1.6rem;
-    padding-right: 1.675rem;
-    column-gap: 1.875rem; }
+    grid-template-columns: repeat(4, 16.6%);
+    column-gap: 1.875rem;
+    justify-items: center; }
 
   .stack-list__item {
     width: 9.375rem;
     height: 9.375rem;
     grid-column-end: span 3; }
 
-  .text-box__half-wide {
-    padding-top: 4.875rem;
-    grid-template-columns: repeat(6, 16.6%);
-    padding: 0 1.6rem;
-    text-align: left;
-    background-color: rgba(124, 203, 235, 0.56);
-    box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.56); }
-
   .text-box__half-wide p:last-of-type {
     margin-bottom: 3rem; }
 
-  .button_container {
-    text-align: center; }
-
   .button_contact {
     padding: 1rem;
-    color: black;
-    background: #cadfff;
-    border-radius: 50%;
-    display: inline-block;
-    position: center; }
+    margin: 0 5rem; }
 
   /* -------------------------------------------------------------------------- */
   /*                                  Showcase                                  */
@@ -252,8 +257,5 @@
   /* -------------------------------------------------------------------------- */
   .features-item {
     font-size: large; } }
-/* -------------------------------------------------------------------------- */
-/*                               @Media @1400px>                              */
-/* -------------------------------------------------------------------------- */
 
 /*# sourceMappingURL=index.css.map */
