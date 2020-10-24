@@ -45,19 +45,20 @@
 
 .stack-list__item {
   text-align: center;
-  list-style: none; }
+  list-style: none;
+  padding-top: 2rem; }
 
 .stack {
   text-align: center;
-  height: 6rem;
-  width: 8rem;
   display: inline-block;
   margin: auto;
-  padding: 5px 15px; }
+  padding: 5px 15px;
+  height: 8rem;
+  width: 10rem; }
 
 .main-title {
-  font-size: 2rem;
-  padding-top: 3rem;
+  font-size: 3rem;
+  padding-top: 4rem;
   grid-column-start: 1;
   grid-column-end: 3; }
 
@@ -93,7 +94,8 @@
   vertical-align: middle; }
 
 .showcase-card button,
-.modal__button {
+.modal__button,
+.button_contact {
   border-radius: 15px;
   font-family: 'Amaranth', sans-serif;
   font-size: 1.25rem;
@@ -102,20 +104,23 @@
   cursor: grab;
   box-shadow: 10px 10px 10px 10px #9cc6f0;
   padding: 25px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  text-decoration: none; }
 
 .action-btn:hover,
-.modal__button:hover {
+.modal__button:hover,
+.button_contact:hover {
   background: #8aaadb;
-  border: #997efc 2px dotted;
-  border-radius: 15px; }
+  border: #997efc 2px dotted; }
 
 .action-btn:active,
-.modal__button:active {
+.modal__button:active,
+.button_contact:active {
   background: #6e67db; }
 
 .action-btn:focus,
-.modal__button:focus {
+.modal__button:focus,
+.button_contact:focus {
   outline: none; }
 
 /* -------------------------------------------------------------------------- */
@@ -139,26 +144,9 @@
   padding: 5px 25px; }
 
 /* -------------------------------------------------------------------------- */
-/*                                Media @ 400px>  Mobile-L                    */
+/*                            @Media 640px > Tablet                            */
 /* -------------------------------------------------------------------------- */
-@media (min-width: 400px) {
-  /* -------------------------------------------------------------------------- */
-  /*                               Picture Section                              */
-  /* -------------------------------------------------------------------------- */
-  .stack-list__item {
-    padding-top: 2rem; }
-
-  .stack {
-    height: 8rem;
-    width: 10rem; }
-
-  .main-title {
-    font-size: 3rem;
-    padding-top: 4rem; } }
-/* -------------------------------------------------------------------------- */
-/*                            @Media <768px Tablet                            */
-/* -------------------------------------------------------------------------- */
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   /* -------------------------------------------------------------------------- */
   /*                               Picture Section                              */
   /* -------------------------------------------------------------------------- */
@@ -199,19 +187,51 @@
   .modal__content {
     width: 50%; }
 
-  .main-title {
-    grid-column-end: 4; }
+  .grid__container {
+    display: grid;
+    width: 98.2vw;
+    grid-template-columns: repeat(2, 50%);
+    align-items: flex-end; }
+    .grid__container padding {
+      left: 1.675rem;
+      right: 1.675rem; }
 
-  .stack {
-    height: 14rem;
-    width: 17rem; }
+  .main-title {
+    grid-column-end: 7;
+    text-align: left;
+    font-size: 3rem;
+    margin: 0;
+    padding: 1.875rem; }
 
   .stack-list {
-    grid-template-columns: auto auto auto; }
+    grid-template-columns: repeat(6, 16.6%);
+    padding-left: 1.6rem;
+    padding-right: 1.675rem;
+    column-gap: 1.875rem; }
 
-  .main-title {
-    font-size: 3.75rem;
-    margin-bottom: 1rem; }
+  .stack-list__item {
+    width: 9.375rem;
+    height: 9.375rem;
+    grid-column-end: span 3; }
+
+  .text-box__half-wide {
+    padding-top: 4.875rem;
+    grid-template-columns: repeat(6, 16.6%);
+    padding: 0 1.6rem;
+    text-align: left;
+    background-color: rgba(124, 203, 235, 0.56);
+    box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.56); }
+
+  .text-box__half-wide p:last-of-type {
+    margin-bottom: 3rem; }
+
+  .button_contact {
+    margin-left: 25rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: black;
+    background: #cadfff;
+    border-radius: 50%; }
 
   /* -------------------------------------------------------------------------- */
   /*                                  Showcase                                  */
@@ -232,28 +252,5 @@
 /* -------------------------------------------------------------------------- */
 /*                               @Media @1400px>                              */
 /* -------------------------------------------------------------------------- */
-@media (min-width: 1440px) {
-  /* -------------------------------------------------------------------------- */
-  /*                               Picture Section                              */
-  /* -------------------------------------------------------------------------- */
-  .stack-list__item {
-    text-align: center;
-    margin: auto; }
-
-  .stack {
-    width: 19rem; }
-
-  /* -------------------------------------------------------------------------- */
-  /*                                  Showcase                                  */
-  /* -------------------------------------------------------------------------- */
-  .showcase-card button,
-  .modal__button {
-    height: 4.8rem; }
-
-  /* -------------------------------------------------------------------------- */
-  /*                                  Features                                  */
-  /* -------------------------------------------------------------------------- */
-  .features-item {
-    display: inline-block; } }
 
 /*# sourceMappingURL=index.css.map */
