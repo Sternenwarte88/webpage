@@ -13,7 +13,7 @@
 	font-size: 2rem;
 	position: relative;
 	margin: 0;
-	padding-top: 3.5rem;
+	padding-top: 1.5rem;
 }
 
 .aboutme-sticker {
@@ -31,7 +31,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
 	.aboutme-sticker {
 		position: relative;
 		left: 20%;
@@ -44,9 +44,7 @@
 	}
 
 	.about {
-		padding-top: 2rem;
 		padding-bottom: 0;
-		font-size: 2rem;
 	}
 
 	.aboutme-sticker {
@@ -63,11 +61,5 @@
 		grid-template-columns: repeat(3, 33%);
 		justify-content: center;
 		align-items: center;
-	}
-}
-
-@media (min-width: 1440px) {
-	.aboutme-sticker {
-		font-size: 1.1rem;
 	}
 }

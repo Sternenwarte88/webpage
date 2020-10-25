@@ -32,9 +32,16 @@ $color: (
 	select {
 		margin: 3% 0;
 	}
+	background-color: rgba(124, 203, 235, 0.75);
+	box-shadow: 0 4px 15px 30px rgba(124, 203, 235, 0.75);
+	backdrop-filter: blur(3px);
 }
 
-.submit.btn {
+label {
+	text-align: left;
+}
+
+.submit-btn {
 	border-radius: 15px;
 	font-family: 'Amaranth', sans-serif;
 	font-size: 1.25rem;
@@ -43,7 +50,18 @@ $color: (
 	cursor: grab;
 	box-shadow: 10px 10px 10px 10px map-get($color, shadow);
 	padding: 25px;
-    vertical-align: middle;
-    margin: 3% auto;
-    width: 25%;
+	vertical-align: middle;
+	margin: 3% auto;
+}
+
+@media (min-width: 1024px) {
+	.formelement {
+		width: 35%;
+		input {
+			margin: 5% 0;
+		}
+		select {
+			margin: 5% 0;
+		}
+	}
 }

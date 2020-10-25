@@ -11,7 +11,7 @@
   font-size: 2rem;
   position: relative;
   margin: 0;
-  padding-top: 3.5rem; }
+  padding-top: 1.5rem; }
 
 .aboutme-sticker {
   display: inline-block;
@@ -24,7 +24,7 @@
     position: relative;
     list-style: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .aboutme-sticker {
     position: relative;
     left: 20%; } }
@@ -33,9 +33,7 @@
     padding-bottom: 0%; }
 
   .about {
-    padding-top: 2rem;
-    padding-bottom: 0;
-    font-size: 2rem; }
+    padding-bottom: 0; }
 
   .aboutme-sticker {
     font-size: 1.1rem;
@@ -50,8 +48,5 @@
     grid-template-columns: repeat(3, 33%);
     justify-content: center;
     align-items: center; } }
-@media (min-width: 1440px) {
-  .aboutme-sticker {
-    font-size: 1.1rem; } }
 
 /*# sourceMappingURL=aboutme.css.map */

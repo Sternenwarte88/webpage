@@ -179,7 +179,8 @@ main {
 .copyright {
   display: flex;
   width: 30vw;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 12px; }
 
 .footer-list__item {
   justify-content: center; }
