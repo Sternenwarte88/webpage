@@ -1,9 +1,10 @@
 .top-box {
-  background: no-repeat center url("../img/14727-scaled.jpg");
+  background: no-repeat center #6342d9a3 url("../img/14727-scaled.jpg");
+  background-blend-mode: overlay;
   background-size: cover;
   height: 100vh;
   padding-bottom: 2rem;
-  filter: blur(6px);
+  filter: blur(4px);
   z-index: -1;
   position: fixed; }
 
