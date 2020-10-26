@@ -95,7 +95,7 @@ main {
   background-color: inherit;
   border: none;
   font-family: 'Grenze Gotisch', cursive;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: 3px;
   padding-right: 0.5rem;
   cursor: pointer; }
@@ -168,13 +168,12 @@ main {
   cursor: grab;
   position: relative;
   justify-content: flex-end;
-  width: 30vw;
-  margin-left: 1rem;
-  margin-right: 1rem; }
+  width: 30vw; }
 
 .case-law {
-  width: 15%;
-  font-size: 2rem; }
+  width: 40%;
+  font-size: 2rem;
+  margin-right: 1rem; }
 
 .copyright {
   display: flex;
@@ -184,6 +183,9 @@ main {
 
 .footer-list__item {
   justify-content: center; }
+
+.main-nav {
+  display: none; }
 
 /* -------------------------------------------------------------------------- */
 /*                            @Media 640px> Tablet                            */
@@ -200,6 +202,9 @@ main {
   /* -------------------------------------------------------------------------- */
   .brand {
     font-size: 3rem; }
+
+  .main-nav {
+    display: inline-block; }
 
   .mobile-nav {
     display: none; }

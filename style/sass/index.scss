@@ -147,7 +147,7 @@ $color: (
 	background: #70b1e0;
 	cursor: grab;
 	box-shadow: 10px 10px 10px 10px map-get($color, shadow);
-	padding: 25px;
+	padding: 0.8rem;
 	vertical-align: middle;
 	text-decoration: none;
 }
@@ -234,7 +234,7 @@ $color: (
 
 	.features-item {
 		display: inline-block;
-		width: 44%;
+		width: 33%;
 		text-align: center;
 	}
 }
@@ -317,5 +317,6 @@ $color: (
 
 	.features-item {
 		font-size: large;
+		text-align: left;
 	}
 }

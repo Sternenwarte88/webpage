@@ -13,9 +13,6 @@
   width: 100vw;
   background-color: rgba(255, 255, 255, 0.5); }
 
-.my-stack {
-  text-align: center; }
-
 .border {
   height: 3rem;
   border-bottom: #88abf7;
@@ -26,15 +23,22 @@
 .text-box {
   margin: 0 auto 2rem;
   width: 90vw;
-  text-align: center; }
+  text-align: left; }
 
 .stack-box {
-  text-align: center;
+  text-align: right;
   width: 100%;
-  padding: 3rem;
-  font-size: 1.2rem; }
+  padding: 3rem; }
   .stack-box img {
     width: 100%; }
+
+.stack-box__timeline {
+  text-align: center;
+  width: 95%; }
+
+.my-stack__gridbox {
+  display: grid;
+  justify-items: center; }
 
 @media (min-width: 1024px) {
   .title {
@@ -44,26 +48,27 @@
 
   .stack-box__timeline {
     width: 100%;
-    grid-column: span 2; }
+    grid-column: span 2;
+    text-align: center; }
 
-  h2 {
-    margin: 3rem 0;
-    text-shadow: 5px 5px 8px #88abf7; }
-
-  .stack-box {
+  .stack-title {
+    margin: 1.5rem 0;
+    text-shadow: 5px 5px 8px #88abf7;
+    grid-column: span 2;
     width: 100%; }
-    .stack-box img {
-      width: 40%;
-      padding: 5% 0; }
+
+  .stack-box img {
+    width: 40%;
+    padding: 5% 0;
+    grid-column-start: 1; }
 
   .my-stack__gridbox {
     display: grid;
-    justify-items: center;
     grid-template-columns: repeat(auto-fit, 50%);
     align-items: center; }
 
   .text-box {
-    width: 50%;
-    margin: 7% 2%; } }
+    width: 90%;
+    margin: 0 2%; } }
 
 /*# sourceMappingURL=mystack.css.map */
