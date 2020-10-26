@@ -10,14 +10,16 @@ $base-color: rgba(124, 203, 235, 0.56);
 	z-index: -1;
 	text-align: center;
 }
-
+p {
+	line-height: 1.8rem;
+}
 .title__background {
 	background-color: $base-color;
 	box-shadow: 0 4px 15px 15px $base-color;
 	margin: 1rem 3rem;
 }
 
-.title{
+.title {
 	padding: 0;
 }
 
@@ -29,4 +31,14 @@ $base-color: rgba(124, 203, 235, 0.56);
 	}
 	margin: 1rem 3rem;
 	text-align: left;
+}
+
+@media (min-width: 1024px) {
+	.title__background {
+		margin: 1rem 5rem;
+	}
+
+	.text-box {
+		margin: 1rem 5rem;
+	}
 }

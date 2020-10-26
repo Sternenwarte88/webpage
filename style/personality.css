@@ -8,6 +8,9 @@
   z-index: -1;
   text-align: center; }
 
+p {
+  line-height: 1.8rem; }
+
 .title__background {
   background-color: rgba(124, 203, 235, 0.56);
   box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.56);
@@ -22,5 +25,12 @@
   font-size: 1.2rem;
   margin: 1rem 3rem;
   text-align: left; }
+
+@media (min-width: 1024px) {
+  .title__background {
+    margin: 1rem 5rem; }
+
+  .text-box {
+    margin: 1rem 5rem; } }
 
 /*# sourceMappingURL=personality.css.map */

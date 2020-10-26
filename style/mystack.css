@@ -26,7 +26,7 @@
   text-align: left; }
 
 .stack-box {
-  text-align: right;
+  text-align: center;
   width: 100%;
   padding: 3rem; }
   .stack-box img {
@@ -40,6 +40,9 @@
   display: grid;
   justify-items: center; }
 
+@media (min-width: 640px) {
+  .stack-box img {
+    width: 45%; } }
 @media (min-width: 1024px) {
   .title {
     padding: 2rem 0;

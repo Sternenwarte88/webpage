@@ -46,6 +46,10 @@ main {
 	cursor: grab;
 	background-color: rgba(0, 0, 0, 0.05);
 }
+
+span {
+	font-weight: bold;
+}
 /* -------------------------------------------------------------------------- */
 /*                                    Head                                    */
 /* -------------------------------------------------------------------------- */
@@ -171,7 +175,7 @@ main {
 	margin: 2rem;
 	font: {
 		family: 'Grenze Gotisch', cursive;
-		size: 1.5rem;
+		size: 1.2rem;
 	}
 	&:hover {
 		color: map-get($colors, text_darker_blue);
@@ -273,20 +277,6 @@ main {
 	.brand {
 		font-size: 3rem;
 	}
-	.main-nav {
-		display: inline-block;
-	}
-	.mobile-nav {
-		display: none;
-	}
-
-	.main-nav__item {
-		display: inline-block;
-	}
-
-	.main-nav__items {
-		display: inline-block;
-	}
 
 	.dropdown:hover .dropdown-content {
 		display: flex;
@@ -295,6 +285,10 @@ main {
 		align-items: center;
 		width: 100vw;
 		right: 0;
+	}
+
+	.case-law {
+		width: 25%;
 	}
 }
 
@@ -309,6 +303,13 @@ main {
 
 	.brand {
 		font-size: 3rem;
+	}
+	.main-nav {
+		display: inline-block;
+	}
+
+	.main-nav__items {
+		display: inline-block;
 	}
 
 	.main-nav__item {

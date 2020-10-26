@@ -42,7 +42,10 @@
     grid-column-end: 4;
     left: 0; }
     .aboutme-sticker ul {
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      text-align: left; }
+    .aboutme-sticker div {
+      text-align: left; }
 
   .gridcontainer {
     display: grid;

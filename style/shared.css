@@ -30,6 +30,9 @@ main {
   cursor: grab;
   background-color: rgba(0, 0, 0, 0.05); }
 
+span {
+  font-weight: bold; }
+
 /* -------------------------------------------------------------------------- */
 /*                                    Head                                    */
 /* -------------------------------------------------------------------------- */
@@ -123,7 +126,7 @@ main {
   text-decoration: none;
   margin: 2rem;
   font-family: 'Grenze Gotisch', cursive;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
   .nav-link:hover {
     color: #88abf7;
     border-bottom: #88abf7;
@@ -203,25 +206,16 @@ main {
   .brand {
     font-size: 3rem; }
 
-  .main-nav {
-    display: inline-block; }
-
-  .mobile-nav {
-    display: none; }
-
-  .main-nav__item {
-    display: inline-block; }
-
-  .main-nav__items {
-    display: inline-block; }
-
   .dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
     z-index: 100;
     align-items: center;
     width: 100vw;
-    right: 0; } }
+    right: 0; }
+
+  .case-law {
+    width: 25%; } }
 /* -------------------------------------------------------------------------- */
 /*                                @Media 1024px >                              */
 /* -------------------------------------------------------------------------- */
@@ -231,6 +225,12 @@ main {
   /* -------------------------------------------------------------------------- */
   .brand {
     font-size: 3rem; }
+
+  .main-nav {
+    display: inline-block; }
+
+  .main-nav__items {
+    display: inline-block; }
 
   .main-nav__item {
     display: inline-block; }

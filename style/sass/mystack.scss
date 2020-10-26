@@ -34,7 +34,7 @@ $colors: (
 }
 
 .stack-box {
-	text-align: right;
+	text-align: center;
 	width: 100%;
 	padding: 3rem;
 	img {
@@ -50,6 +50,14 @@ $colors: (
 .my-stack__gridbox {
 	display: grid;
 	justify-items: center;
+}
+
+@media (min-width: 640px) {
+	.stack-box {
+		img {
+			width: 45%;
+		}
+	}
 }
 
 @media (min-width: 1024px) {
