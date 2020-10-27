@@ -1,27 +1,21 @@
-$colors: (
-	text_darker_blue: #88abf7,
-);
+@import 'colors.scss';
+@import "templates.scss";
 
 .top-box {
 	background: no-repeat center #6342d9a3 url('../img/14727-scaled.jpg');
 	background-blend-mode: overlay;
-	background-size: cover;
-	height: 100vh;
-	padding-bottom: 2rem;
-	filter: blur(4px);
-	z-index: -1;
-	position: fixed;
+	@include bg_image_template;
 }
 
 .blur-box {
 	height: 100vh;
 	width: 100vw;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: map-get($color, half_transparent_white);
 }
 
 .border {
 	height: 3rem;
-	border-bottom: map-get($colors, text_darker_blue);
+	border-bottom: map-get($color, text_darker_blue);
 	border-bottom-style: dotted;
 	border-bottom-left-radius: 25%;
 	border-bottom-right-radius: 100%;
@@ -75,7 +69,7 @@ $colors: (
 
 	.stack-title {
 		margin: 1.5rem 0;
-		text-shadow: 5px 5px 8px map-get($colors, text_darker_blue);
+		text-shadow: 5px 5px 8px map-get($color, text_darker_blue);
 		grid-column: span 2;
 		width: 100%;
 	}

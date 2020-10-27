@@ -1,16 +1,10 @@
-$color: (
-	shadow: #9cc6f0,
-);
+@import 'colors.scss';
+@import 'templates.scss';
 
 .top-box {
 	background: no-repeat top
 		url('../img/wallpapertip_internet-wallpaper_123097.jpg');
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
-	position: fixed;
-	filter: blur(3px);
-	z-index: -1;
+	@include bg_image_template;
 }
 
 .container {
@@ -32,26 +26,13 @@ $color: (
 	select {
 		margin: 3% 0;
 	}
-	background-color: rgba(124, 203, 235, 0.75);
-	box-shadow: 0 4px 15px 30px rgba(124, 203, 235, 0.75);
+	background-color: map-get($color, box_shadow);
+	box-shadow: 0 4px 15px 30px map-get($color, box_shadow);
 	backdrop-filter: blur(3px);
 }
 
 label {
 	text-align: left;
-}
-
-.submit-btn {
-	border-radius: 15px;
-	font-family: 'Amaranth', sans-serif;
-	font-size: 1.25rem;
-	border: none;
-	background: #70b1e0;
-	cursor: grab;
-	box-shadow: 10px 10px 10px 10px map-get($color, shadow);
-	padding: 25px;
-	vertical-align: middle;
-	margin: 3% auto;
 }
 
 @media (min-width: 1024px) {

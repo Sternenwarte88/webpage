@@ -1,21 +1,17 @@
-$base-color: rgba(124, 203, 235, 0.56);
-
+@import 'colors.scss';
+@import 'templates.scss';
 .top-box {
 	background: no-repeat bottom url('../img/wallpaperflare.com_wallpaper.jpg');
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
+	@include bg_image_template;
 	padding-bottom: 1rem;
-	position: fixed;
-	z-index: -1;
 	text-align: center;
 }
 p {
 	line-height: 1.8rem;
 }
 .title__background {
-	background-color: $base-color;
-	box-shadow: 0 4px 15px 15px $base-color;
+	background-color: map-get($color, base-color);
+	box-shadow: 0 4px 15px 15px map-get($color, base-color);
 	margin: 1rem 3rem;
 }
 
@@ -24,8 +20,8 @@ p {
 }
 
 .text-box {
-	background-color: $base-color;
-	box-shadow: 0 4px 15px 15px $base-color;
+	background-color: map-get($color, base-color);
+	box-shadow: 0 4px 15px 15px map-get($color, base-color);
 	font: {
 		size: 1.2rem;
 	}

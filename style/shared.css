@@ -28,7 +28,39 @@ main {
 
 .stack-list__item:hover {
   cursor: grab;
-  background-color: rgba(0, 0, 0, 0.05); }
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.showcase-card button,
+.modal__button,
+.cta-button,
+.submit-btn {
+  border-radius: 15px;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.25rem;
+  border: outset 2px black;
+  background-color: #70b1e0;
+  cursor: grab;
+  padding: 0.8rem;
+  vertical-align: middle;
+  text-decoration: none;
+  margin: 0.5rem 2rem;
+  color: black;
+  display: inline-block;
+  transition: all 200ms ease; }
+  .showcase-card button:hover,
+  .modal__button:hover,
+  .cta-button:hover,
+  .submit-btn:hover {
+    background-color: #649bc2;
+    border: #416885 3px inset; }
+  .showcase-card button:focus,
+  .modal__button:focus,
+  .cta-button:focus,
+  .submit-btn:focus {
+    outline: none; }
+
+.cta-container {
+  text-align: center; }
 
 span {
   font-weight: bold; }

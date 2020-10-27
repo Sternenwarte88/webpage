@@ -1,12 +1,10 @@
+@import 'colors.scss';
+@import 'templates.scss';
+
 .background_image {
 	background: no-repeat bottom url('../img/1445478.jpg');
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
+	@include bg_image_template;
 	padding-bottom: 1rem;
-	position: fixed;
-	z-index: -1;
-	filter: blur(3px);
 }
 p {
 	line-height: 1.8rem;
@@ -18,7 +16,7 @@ p {
 
 .aboutme-past {
 	background-color: rgba($color: white, $alpha: 0.7);
-	box-shadow: 0 10px 12px 23px rgba(2, 44, 64, 0.58);
+	box-shadow: 0 10px 12px 23px map-get($color, box_shadow);
 	font: {
 		size: 1.2rem;
 	}

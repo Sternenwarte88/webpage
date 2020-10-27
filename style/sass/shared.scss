@@ -1,7 +1,5 @@
-$colors: (
-	main_text: #9cc6f0,
-	text_darker_blue: #88abf7,
-);
+@import 'colors.scss';
+@import 'templates.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Grenze+Gotisch:wght@400;700&family=Libre+Baskerville:ital@0;1&family=PT+Sans&family=PT+Sans+Caption&family=Tangerine:wght@400;700&display=swap');
 
@@ -32,7 +30,7 @@ main {
 .title {
 	text: {
 		align: center;
-		shadow: 5px 5px 8px map-get($colors, text_darker_blue);
+		shadow: 5px 5px 8px map-get($color, text_darker_blue);
 	}
 	font: {
 		size: 2.25rem;
@@ -44,7 +42,27 @@ main {
 
 .stack-list__item:hover {
 	cursor: grab;
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: map-get($color, half_transparent_white);
+}
+
+.showcase-card button,
+.modal__button,
+.cta-button,
+.submit-btn {
+	@include button_template;
+	&:hover {
+		@include button_hover_template;
+	}
+	&:active {
+		@include button_active_template;
+	}
+	&:focus {
+		@include button_focus_template;
+	}
+}
+
+.cta-container {
+	text-align: center;
 }
 
 span {
@@ -76,7 +94,7 @@ span {
 		size: 2rem;
 		weight: bold;
 	}
-	color: map-get($colors, text_darker_blue);
+	color: map-get($color, text_darker_blue);
 	text-decoration: none;
 	padding: 10px;
 	vertical-align: middle;
@@ -109,7 +127,7 @@ span {
 }
 
 .mobile-nav-link {
-	color: map-get($colors, text_darker_blue);
+	color: map-get($color, text_darker_blue);
 	text-decoration: none;
 	font: {
 		family: 'Grenze Gotisch', cursive;
@@ -132,7 +150,7 @@ span {
 
 .dropdown {
 	.dropbtn {
-		color: map-get($colors, text_darker_blue);
+		color: map-get($color, text_darker_blue);
 		text-decoration: none;
 		background-color: inherit;
 		border: none;
@@ -170,7 +188,7 @@ span {
 }
 
 .nav-link {
-	color: map-get($colors, text_darker_blue);
+	color: map-get($color, text_darker_blue);
 	text-decoration: none;
 	margin: 2rem;
 	font: {
@@ -178,16 +196,16 @@ span {
 		size: 1.2rem;
 	}
 	&:hover {
-		color: map-get($colors, text_darker_blue);
+		color: map-get($color, text_darker_blue);
 		border: {
-			bottom: map-get($colors, text_darker_blue);
+			bottom: map-get($color, text_darker_blue);
 			bottom-style: dotted;
 			bottom-left-radius: 15%;
 			bottom-right-radius: 15%;
 		}
 	}
 	&:active {
-		color: #5e76ab;
+		color: map-get($color, link_active);
 	}
 }
 

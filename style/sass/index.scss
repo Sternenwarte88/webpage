@@ -1,13 +1,10 @@
-$color: (
-	bg-color: #7ee8fc,
-	shadow: #9cc6f0,
-	base-color: rgba(124, 203, 235, 0.56),
-);
+@import 'colors.scss';
+@import 'templates.scss';
 /* -------------------------------------------------------------------------- */
 /*                               Picture Section                              */
 /* -------------------------------------------------------------------------- */
 .modal__backdrop {
-	background: rgba(0, 0, 0, 0.4);
+	background: map-get($color, half_transparent);
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
@@ -22,11 +19,11 @@ $color: (
 	padding: 5%;
 	top: 25vh;
 	text-align: center;
-	box-shadow: 0 1px 20px 10px map-get($color, shadow);
+	box-shadow: 0 1px 20px 10px map-get($color, box_shadow);
 
 	h1 {
 		font-size: 1.5rem;
-		color: #0e3e75;
+		color: map-get($color, h1_color);
 		text-decoration: underline;
 	}
 }
@@ -34,12 +31,7 @@ $color: (
 .top-box {
 	background: no-repeat bottom
 		url('../img/—Pngtree—simple\ technology\ business\ line_938398-min.jpg');
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
-	padding-bottom: 1rem;
-	position: fixed;
-	z-index: -1;
+	@include bg_image_template;
 }
 
 .stack-list {
@@ -49,8 +41,6 @@ $color: (
 	display: grid;
 	grid-template-columns: 50% 50%;
 	padding: 0;
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(4px);
 	text-align: center;
 }
 
@@ -81,19 +71,9 @@ $color: (
 	grid-template-columns: repeat(6, 16.6%);
 	padding: 0 1.6rem;
 	text-align: left;
-	background-color: rgba(124, 203, 235, 0.26);
-	box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.26);
+	background-color: map-get($color, base-color);
+	box-shadow: 0 4px 15px 15px map-get($color, base-color);
 	margin-top: 3rem;
-}
-
-.button_contact {
-	margin: 0 2rem;
-	color: black;
-	display: inline-block;
-}
-
-.button_container {
-	text-align: center;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -108,9 +88,9 @@ $color: (
 }
 
 .showcase-card {
-	background-color: map-get($color, bg-color);
+	background-color: map-get($color, base-color);
 	text-align: center;
-	box-shadow: 8px 8px 8px 8px map-get($color, shadow);
+	box-shadow: 8px 8px 20px 25px map-get($color, base-color);
 	margin: 15px 0;
 	padding: 25px 0;
 	font-family: 'PT Sans', sans-serif;
@@ -137,39 +117,6 @@ $color: (
 	vertical-align: middle;
 }
 
-.showcase-card button,
-.modal__button,
-.button_contact {
-	border-radius: 15px;
-	font-family: 'Amaranth', sans-serif;
-	font-size: 1.25rem;
-	border: none;
-	background: #70b1e0;
-	cursor: grab;
-	box-shadow: 10px 10px 10px 10px map-get($color, shadow);
-	padding: 0.8rem;
-	vertical-align: middle;
-	text-decoration: none;
-}
-
-.action-btn:hover,
-.modal__button:hover,
-.button_contact:hover {
-	background: #8aaadb;
-	border: #997efc 2px dotted;
-}
-
-.action-btn:active,
-.modal__button:active,
-.button_contact:active {
-	background: #6e67db;
-}
-.action-btn:focus,
-.modal__button:focus,
-.button_contact:focus {
-	outline: none;
-}
-
 /* -------------------------------------------------------------------------- */
 /*                                  Features                                  */
 /* -------------------------------------------------------------------------- */
@@ -177,11 +124,11 @@ $color: (
 .features {
 	margin: 48px 0;
 	padding: 48px 0;
-	background-color: map-get($color, bg-color);
+	background-color: map-get($color, base-color);
 }
 
 .features-title {
-	text-shadow: 5px 5px 8px 5px white;
+	text-shadow: 5px 5px 8px 5px map-get($color, features_title_shadow);
 	padding: 8px;
 	padding-bottom: 36px;
 	margin: 8px;
@@ -231,9 +178,9 @@ $color: (
 	/* -------------------------------------------------------------------------- */
 	/*                                  Features                                  */
 	/* -------------------------------------------------------------------------- */
-.features{
-	text-align: center;
-}
+	.features {
+		text-align: center;
+	}
 	.features-item {
 		display: inline-block;
 		width: 33%;

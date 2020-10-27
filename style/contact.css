@@ -30,18 +30,6 @@
 label {
   text-align: left; }
 
-.submit-btn {
-  border-radius: 15px;
-  font-family: 'Amaranth', sans-serif;
-  font-size: 1.25rem;
-  border: none;
-  background: #70b1e0;
-  cursor: grab;
-  box-shadow: 10px 10px 10px 10px #9cc6f0;
-  padding: 25px;
-  vertical-align: middle;
-  margin: 3% auto; }
-
 @media (min-width: 1024px) {
   .formelement {
     width: 35%; }
