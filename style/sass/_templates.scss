@@ -23,6 +23,11 @@
 	background: map-get($color, bg-color-active);
 }
 
+@mixin button_disabled_template {
+	background-color: grey !important;
+	border: none !important;
+}
+
 @mixin button_focus_template {
 	outline: none;
 }
