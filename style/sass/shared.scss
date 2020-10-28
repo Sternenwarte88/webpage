@@ -40,10 +40,7 @@ main {
 	padding: 15px 0;
 }
 
-.stack-list__item:hover {
-	cursor: grab;
-	background-color: map-get($color, half_transparent_white);
-}
+
 
 .showcase-card button,
 .modal__button,

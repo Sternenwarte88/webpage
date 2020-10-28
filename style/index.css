@@ -44,7 +44,14 @@
 .stack-list__item {
   text-align: center;
   list-style: none;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  border: outset 2px black;
+  transition: all 200ms ease; }
+
+.stack-list__item:hover {
+  cursor: grab;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: #416885 3px inset; }
 
 .stack {
   text-align: center;
@@ -183,8 +190,8 @@
     margin: 0; }
 
   .stack {
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
     padding: unset; }
 
   .stack-list {

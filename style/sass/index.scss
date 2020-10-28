@@ -48,6 +48,14 @@
 	text-align: center;
 	list-style: none;
 	padding-top: 2rem;
+	border: outset 2px black;
+	transition: all 200ms ease;
+}
+
+.stack-list__item:hover {
+	cursor: grab;
+	background-color: map-get($color, half_transparent_white);
+	border: map-get($color, border-color) 3px inset;
 }
 
 .stack {
@@ -220,8 +228,8 @@
 	}
 
 	.stack {
-		width: 9rem;
-		height: 9rem;
+		width: 8rem;
+		height: 8rem;
 		padding: unset;
 	}
 
