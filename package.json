@@ -1,0 +1,22 @@
+{
+	"name": "my-webpack-project",
+	"version": "1.0.0",
+	"description": "My webpack project",
+	"main": "index.html",
+	"scripts": {
+		"dev": "parcel index.html",
+		"build": "parcel build index.html -d ./Deploy --no-source-maps"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Wusabinga/webpage.git"
+	},
+	"author": "Stephan Löcher",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Wusabinga/webpage/issues"
+	},
+	"homepage": "https://github.com/Wusabinga/webpage#readme",
+	"devDependencies": {},
+	"dependencies": {}
+}
