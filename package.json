@@ -1,22 +1,23 @@
 {
-	"name": "my-webpack-project",
-	"version": "1.0.0",
-	"description": "My webpack project",
-	"main": "index.html",
-	"scripts": {
-		"dev": "parcel index.html",
-		"build": "parcel build index.html -d ./Deploy --no-source-maps"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Wusabinga/webpage.git"
-	},
-	"author": "Stephan Löcher",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Wusabinga/webpage/issues"
-	},
-	"homepage": "https://github.com/Wusabinga/webpage#readme",
-	"devDependencies": {},
-	"dependencies": {}
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "my personal webpage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wusabinga/webpage.git"
+  },
+  "author": "Stephan Löcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wusabinga/webpage/issues"
+  },
+  "homepage": "https://github.com/Wusabinga/webpage#readme",
+  "dependencies": {
+    "grunt": "^1.3.0",
+    "grunt-sftp-deploy": "^0.2.5"
+  }
 }
