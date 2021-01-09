@@ -2,7 +2,7 @@
 @import 'templates.scss';
 
 .background_image {
-	background: no-repeat bottom url('../img/1445478.jpg');
+	background: no-repeat bottom url('../img/webp/1445478.webp');
 	@include bg_image_template;
 	padding-bottom: 1rem;
 }

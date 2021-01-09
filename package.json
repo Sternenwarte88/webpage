@@ -19,5 +19,8 @@
   "dependencies": {
     "grunt": "^1.3.0",
     "grunt-sftp-deploy": "^0.2.5"
+  },
+  "devDependencies": {
+    "grunt-cwebp": "^3.0.3"
   }
 }
