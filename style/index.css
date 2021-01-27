@@ -163,7 +163,7 @@
   .features-item {
     display: inline-block;
     width: 33%;
-    text-align: left; } }
+    text-align: center; } }
 /* -------------------------------------------------------------------------- */
 /*                               @Media @1024px>                              */
 /* -------------------------------------------------------------------------- */
@@ -226,7 +226,6 @@
   /*                                  Features                                  */
   /* -------------------------------------------------------------------------- */
   .features-item {
-    font-size: large;
-    text-align: left; } }
+    font-size: large; } }
 
 /*# sourceMappingURL=index.css.map */
