@@ -1,0 +1,16 @@
+TODO overall: let navigationbar on top
+
+TODO index.html: fix showing modal one time only (set cookie)
+TODO index.html: show information for cookies (EU-Law)
+TODO index.html: form showcases to a gallery
+TODO index.html: update showcases and links
+TODO index.html: get special skills aligned centered
+
+TODO aboutme.html: get sections into "zieharmonika" transition
+TODO aboutme.html: find a solution for better readability
+
+TODO mystack.html: get skills in caroussel
+
+TODO personality.html: get better readability! !important!
+
+TODO rechtliches.html: get a better readabilty and styling
