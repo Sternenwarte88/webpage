@@ -13,16 +13,16 @@ p {
   line-height: 1.8rem; }
 
 .title__background {
-  background-color: rgba(124, 203, 235, 0.56);
-  box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.56);
+  background-color: rgba(189, 242, 255, 0.781);
+  box-shadow: 0 4px 15px 15px rgba(189, 242, 255, 0.781);
   margin: 1rem 3rem; }
 
 .title {
   padding: 0; }
 
 .text-box {
-  background-color: rgba(124, 203, 235, 0.56);
-  box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.56);
+  background-color: rgba(189, 242, 255, 0.781);
+  box-shadow: 0 4px 15px 15px rgba(189, 242, 255, 0.781);
   font-size: 1.2rem;
   margin: 1rem 3rem;
   text-align: left; }

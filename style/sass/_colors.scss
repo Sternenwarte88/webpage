@@ -1,6 +1,6 @@
 $color: (
-	bg-color: rgba(124, 203, 235, 1),
-	base-color: rgba(124, 203, 235, 0.56),
+	bg-color: rgb(153, 214, 238),
+	base-color: rgba(189, 242, 255, 0.781),
 	box_shadow: rgba(124, 203, 235, 0.75),
 	text_darker_blue: #88abf7,
 	h1_color: #0e3e75,
@@ -13,4 +13,6 @@ $color: (
 	btn-bg-active: #6bfae7,
 	border-color: #416885,
 	fa_icon_white: white,
+	bar-color:
+		linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
 );

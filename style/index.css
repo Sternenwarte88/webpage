@@ -10,7 +10,7 @@
   z-index: 200; }
 
 .modal__content {
-  background: #7ccbeb;
+  background: #99d6ee;
   font-family: 'PT Sans', sans-serif;
   position: relative;
   margin: auto;
@@ -72,8 +72,8 @@
   grid-template-columns: repeat(6, 16.6%);
   padding: 0 1.6rem;
   text-align: left;
-  background-color: rgba(124, 203, 235, 0.56);
-  box-shadow: 0 4px 15px 15px rgba(124, 203, 235, 0.56);
+  background-color: rgba(189, 242, 255, 0.781);
+  box-shadow: 0 4px 15px 15px rgba(189, 242, 255, 0.781);
   margin-top: 3rem; }
 
 /* -------------------------------------------------------------------------- */
@@ -86,9 +86,9 @@
   flex-direction: column; }
 
 .showcase-card {
-  background-color: rgba(124, 203, 235, 0.56);
+  background-color: rgba(189, 242, 255, 0.781);
   text-align: center;
-  box-shadow: 8px 8px 20px 25px rgba(124, 203, 235, 0.56);
+  box-shadow: 8px 8px 20px 25px rgba(189, 242, 255, 0.781);
   margin: 15px 0;
   padding: 25px 0;
   font-family: 'PT Sans', sans-serif; }
@@ -113,7 +113,7 @@
 .features {
   margin: 48px 0;
   padding: 48px 0;
-  background-color: rgba(124, 203, 235, 0.56); }
+  background-color: rgba(189, 242, 255, 0.781); }
 
 .features-title {
   text-shadow: 5px 5px 8px 5px white;
