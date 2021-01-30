@@ -5,5 +5,3 @@ TODO index.html: update showcases and links
 
 
 TODO mystack.html: get skills in caroussel
-
-TODO rechtliches.html: get a better readabilty and styling

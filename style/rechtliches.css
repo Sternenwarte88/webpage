@@ -9,6 +9,20 @@
   z-index: -1;
   padding-bottom: 1rem; }
 
+.textBox {
+  margin: 2% 19%; }
+
+.linkBox {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(189, 242, 255, 0.781);
+  box-shadow: 0 0 19px 20px rgba(189, 242, 255, 0.781);
+  width: 25%; }
+
+p {
+  margin-top: 3%; }
+
 a {
   color: #88abf7;
   text-decoration: none;

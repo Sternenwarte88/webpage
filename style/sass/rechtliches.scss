@@ -8,7 +8,24 @@
 	@include bg_image_template;
 	padding-bottom: 1rem;
 }
+.textBox {
+	margin: 2% 19%;
+}
 
+.linkBox {
+	margin: {
+		top: 3rem;
+		left: auto;
+		right: auto;
+	}
+	background: map-get($color, base-color);
+	box-shadow: 0 0 19px 20px map-get($color, base-color);
+	width: 25%;
+}
+
+p {
+	margin-top: 3%;
+}
 a {
 	color: map-get($color, text_darker_blue);
 	text-decoration: none;
