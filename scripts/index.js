@@ -21,10 +21,8 @@ const checkCookie = function checkCookie(name) {
 	let firstVisitCookie = getCookie(name);
 	if (firstVisitCookie === 'false') {
 		modalBackdrop.style.display = 'none';
-		console.log(false);
 	} else {
 		document.cookie = 'firstVisit = false';
-		console.log(true);
 	}
 };
 

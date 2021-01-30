@@ -2,7 +2,7 @@ const mobileNavBtn = document.querySelector('.fa-bars');
 const mobileMainNav = document.querySelector('.mobile-main-nav');
 const dropDownBtn = document.querySelector('.mobile');
 const dropDownContent = document.querySelector('.mobile-content');
-const dropDownCross = document.getElementById('nav_close');
+const closeDropDown = document.getElementById('nav_close');
 
 function displayMobileNav() {
 	mobileMainNav.classList.toggle('display-flex');
@@ -28,4 +28,4 @@ function navClose() {
 
 mobileNavBtn.addEventListener('click', displayMobileNav);
 dropDownBtn.addEventListener('click', dropdownTest);
-dropDownCross.addEventListener('click', navClose);
+closeDropDown.addEventListener('click', navClose);
