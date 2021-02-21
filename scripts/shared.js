@@ -26,6 +26,9 @@ function navClose() {
 	}
 }
 
+// if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('../sw.js');
+
 mobileNavBtn.addEventListener('click', displayMobileNav);
 dropDownBtn.addEventListener('click', dropdownTest);
 closeDropDown.addEventListener('click', navClose);
