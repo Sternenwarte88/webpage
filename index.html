@@ -1,295 +1,214 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style/shared.css" />
-		<link rel="stylesheet" href="./style/index.css" />
-		<script src="./scripts/shared.js" defer></script>
-		<script src="./scripts/index.js" defer></script>
-		<script
-			src="https://kit.fontawesome.com/d3c40689e8.js"
-			defer
-			crossorigin="anonymous"
-		></script>
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/shared.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <script src="./scripts/shared.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d3c40689e8.js" defer crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
-		<title>Stephan Löcher - Ihr Web-Developer</title>
-	</head>
-	<body>
-		<!-- -------------------------------- modal -------------------------------- -->
-		<div class="modal__backdrop">
-			<div class="modal__content">
-				<h1>Please Note:</h1>
-				<p>
-					In Terms of researching user Experience, this site is <br />
-					analysed by inspectled.com. More information
-					<a
-						href="https://docs.inspectlet.com/hc/en-us/articles/360002994432-Privacy-Impact-Assessment-under-GDPR"
-					>
-						by inspectled.com</a
-					>
-					or <a href="./rechtliches.html"> here.</a><br />
-					You can Opt-Out
-					<a href="https://www.inspectlet.com/optout"> here</a> and we stop
-					collecting data.
-				</p>
-				<p
-					>This Page uses only crucial cookies. We don´t track any data exept
-					for inspectled.com</p
-				>
-				<button class="modal__button">Continue</button>
-			</div>
-		</div>
-		<!-- ------------------------------- nav bar ------------------------------- -->
-		<header class="main-header">
-			<div class="head-title">
-				<a class="brand" href="index.html">Stephan Löcher</a>
-			</div>
-			<nav class="mobile-nav"><i class="fas fa-bars" type="button"></i></nav>
-			<nav class="main-nav">
-				<ul class="main-nav__items">
-					<div class="dropdown">
-						<button class="dropbtn">
-							About me <i class="fa fa-caret-down" aria-hidden="true"></i>
-						</button>
-						<div class="dropdown-content">
-							<a class="nav-link" href="./aboutme.html">About me</a>
-							<a class="nav-link" href="./mystack.html"
-								>My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a
-							>
-							<a class="nav-link" href="./personality.html"
-								>My&nbsp;personality</a
-							>
-							<a class="nav-link" href="./philosophy.html"
-								>My&nbsp;Philosophy</a
-							>
-						</div>
-					</div>
-				</ul>
-				<ul class="main-nav__items">
-					<a class="nav-link" href="./contact.html">Contact me</a>
-				</ul>
-				<a class="nav-link" href="https://www.dev-labs.coding-experience.de"
-					>Dev-Labs</a
-				>
-				<a class="nav-link" href="https://bt.coding-experience.de"
-					>Bug Tracker</a
-				>
-				<a class="nav-link" href="https://www.blog.coding-experience.de"
-					>Blog</a
-				>
-			</nav>
-		</header>
-		<!-- ----------------------------- mobile nav ------------------------------ -->
-		<nav class="mobile-main-nav">
-			<ul class="mobile-main-nav__items">
-				<div class="dropdown">
-					<button class="dropbtn mobile">
-						About me <i class="fa fa-caret-down" aria-hidden="true"></i>
-					</button>
-					<div class="dropdown-content mobile-content">
-						<a class="mobile-nav-link__dropdown" href="./aboutme.html"
-							>About&nbsp;me</a
-						>
-						<a class="mobile-nav-link__dropdown" href="./mystack.html"
-							>My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a
-						>
-						<a class="mobile-nav-link__dropdown" href="./personality.html"
-							>My&nbsp;personality</a
-						>
-						<a class="mobile-nav-link__dropdown" href="./philosophy.html"
-							>My&nbsp;Philosophy</a
-						>
-					</div>
-				</div>
-				<a class="mobile-nav-link" href="./contact.html">Contact me</a>
-				<a
-					class="mobile-nav-link"
-					href="https://www.dev-labs.coding-experience.de"
-					>Dev-Labs</a
-				>
-				<a class="mobile-nav-link" href="https://bt.coding-experience.de"
-					>Bug Tracker</a
-				>
-				<a class="mobile-nav-link" href="https://www.blog.coding-experience.de"
-					>Blog</a
-				>
-			</ul>
-			<i class="fas fa-times fa_icon_white" id="nav_close"></i>
-		</nav>
-		<!-- ---------------------------- main section ----------------------------- -->
-		<main>
-			<section class="top-box"></section>
-			<div class="grid__container">
-				<ul class="stack-list">
-					<h1 class="main-title title">My Stack is Powered by:</h1>
-					<li class="stack-list__item">
-						<a href="http://www.nodejs.org/"
-							><img class="stack" src="./img/webp/node.webp" alt="Node.js"
-						/></a>
-					</li>
-					<li class="stack-list__item">
-						<a href="https://developer.mozilla.org/"
-							><img class="stack" src="./img/html-css-js.png" alt="html-css-js"
-						/></a>
-					</li>
-					<li class="stack-list__item">
-						<a href="https://expressjs.com/"
-							><img class="stack" src="./img/express.png" alt="express.js"
-						/></a>
-					</li>
-					<li class="stack-list__item">
-						<a href="https://reactjs.org/"
-							><img class="stack" src="./img/react.png" alt="React"
-						/></a>
-					</li>
-					<li class="stack-list__item">
-						<a href="https://www.mongodb.com/"
-							><img class="stack" src="./img/mongodb.png" alt="MongoDB"
-						/></a>
-					</li>
-					<li class="stack-list__item">
-						<a href="https://react-redux.js.org/"
-							><img class="stack" src="./img/redux.png" alt="React-Redux"
-						/></a>
-					</li>
-				</ul>
+    <title>Stephan Löcher - Ihr Web-Developer</title>
+  </head>
+  <body>
+    <!-- -------------------------------- modal -------------------------------- -->
+    <div class="modal__backdrop">
+      <div class="modal__content">
+        <h1>Please Note:</h1>
+        <p>
+          In Terms of researching user Experience, this site is <br />
+          analysed by inspectled.com. More information
+          <a href="https://docs.inspectlet.com/hc/en-us/articles/360002994432-Privacy-Impact-Assessment-under-GDPR">
+            by inspectled.com</a
+          >
+          or <a href="./rechtliches.html"> here.</a><br />
+          You can Opt-Out
+          <a href="https://www.inspectlet.com/optout"> here</a> and we stop collecting data.
+        </p>
+        <p>This Page uses only crucial cookies. We don´t track any data exept for inspectled.com</p>
+        <button class="modal__button">Continue</button>
+      </div>
+    </div>
+    <!-- ------------------------------- nav bar ------------------------------- -->
+    <header class="main-header">
+      <div class="head-title">
+        <a class="brand" href="index.html">Stephan Löcher</a>
+      </div>
+      <nav class="mobile-nav"><i class="fas fa-bars" type="button"></i></nav>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <div class="dropdown">
+            <button class="dropbtn">About me <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            <div class="dropdown-content">
+              <a class="nav-link" href="./aboutme.html">About me</a>
+              <a class="nav-link" href="./mystack.html">My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a>
+              <a class="nav-link" href="./personality.html">My&nbsp;personality</a>
+              <a class="nav-link" href="./philosophy.html">My&nbsp;Philosophy</a>
+            </div>
+          </div>
+        </ul>
+        <ul class="main-nav__items">
+          <a class="nav-link" href="./contact.html">Contact me</a>
+        </ul>
+        <a class="nav-link" href="https://www.dev-labs.coding-experience.de">Dev-Labs</a>
+        <a class="nav-link" href="https://bt.coding-experience.de">Bug Tracker</a>
+        <a class="nav-link" href="https://www.blog.coding-experience.de">Blog</a>
+      </nav>
+    </header>
+    <!-- ----------------------------- mobile nav ------------------------------ -->
+    <nav class="mobile-main-nav">
+      <ul class="mobile-main-nav__items">
+        <div class="dropdown">
+          <button class="dropbtn mobile">About me <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <div class="dropdown-content mobile-content">
+            <a class="mobile-nav-link__dropdown" href="./aboutme.html">About&nbsp;me</a>
+            <a class="mobile-nav-link__dropdown" href="./mystack.html">My&nbsp;Stack&nbsp;&amp;&nbsp;Roadmap</a>
+            <a class="mobile-nav-link__dropdown" href="./personality.html">My&nbsp;personality</a>
+            <a class="mobile-nav-link__dropdown" href="./philosophy.html">My&nbsp;Philosophy</a>
+          </div>
+        </div>
+        <a class="mobile-nav-link" href="./contact.html">Contact me</a>
+        <a class="mobile-nav-link" href="https://www.dev-labs.coding-experience.de">Dev-Labs</a>
+        <a class="mobile-nav-link" href="https://bt.coding-experience.de">Bug Tracker</a>
+        <a class="mobile-nav-link" href="https://www.blog.coding-experience.de">Blog</a>
+      </ul>
+      <i class="fas fa-times fa_icon_white" id="nav_close"></i>
+    </nav>
+    <!-- ---------------------------- main section ----------------------------- -->
+    <main>
+      <section class="top-box"></section>
+      <div class="grid__container">
+        <ul class="stack-list">
+          <h1 class="main-title title">My Stack is Powered by:</h1>
+          <li class="stack-list__item">
+            <a href="http://www.nodejs.org/"><img class="stack" src="./img/webp/node.webp" alt="Node.js" /></a>
+          </li>
+          <li class="stack-list__item">
+            <a href="https://developer.mozilla.org/"
+              ><img class="stack" src="./img/html-css-js.png" alt="html-css-js"
+            /></a>
+          </li>
+          <li class="stack-list__item">
+            <a href="https://expressjs.com/"><img class="stack" src="./img/express.png" alt="express.js" /></a>
+          </li>
+          <li class="stack-list__item">
+            <a href="https://reactjs.org/"><img class="stack" src="./img/react.png" alt="React" /></a>
+          </li>
+          <li class="stack-list__item">
+            <a href="https://www.mongodb.com/"><img class="stack" src="./img/mongodb.png" alt="MongoDB" /></a>
+          </li>
+          <li class="stack-list__item">
+            <a href="https://react-redux.js.org/"><img class="stack" src="./img/redux.png" alt="React-Redux" /></a>
+          </li>
+        </ul>
 
-				<div class="text-box__half-wide">
-					<h2>Stephan Löcher</h2>
-					<h3>Ihr Web-Entwickler</h3>
-					<h4>
-						Web-Entwickler aus Faszination. Web-Entwickler als Rohdiamant?
-						<br />
-						Wie kann ein Rohdiamant wertvoll sein?
-					</h4>
-					<p>
-						Jeden Tag lerne ich etwas neues auf dem Weg zum Web-Entwickler.
-						Dabei werden Vorstellungen zur Realität, angetrieben durch meinen
-						Wissensdurst.
-					</p>
-					<p>
-						<span> Aber wie kann ein Rohdiamant nun für Sie wertvoll sein?</span
-						><br />
-						Ein Rohdiamant bekommt mit dem Feinschliff seine eigentliche Form
-						und den Wert. Übertragen bedeutet dies, mit ein wenig Geduld und
-						Wissen gebe Ich Ihnen Loyalität, Ideenreichtum und neben
-						Teamfähigkeit auch meine Kreativität, Experimentierfreude sowie
-						meine analytische Auffassungsgabe.
-					</p>
-					<p>
-						Noch Fragen? Zögern Sie nicht mich zu kontaktieren oder schauen Sie
-						in der "About Me" Section rein. Ich freue mich auf Sie.
-					</p>
-					<div class="cta-container">
-						<a class="cta-button" href="./contact.html">Contact Me</a>
-						<a class="cta-button" href="./aboutme.html">About Me</a>
-					</div>
-				</div>
-			</div>
-			<!-- ------------------------------ showcase ------------------------------- -->
-			<section>
-				<div>
-					<h1 class="title">Showcase Pages</h1>
-				</div>
-			</section>
-			<section class="showcase">
-				<div class="showcase-card">
-					<article>
-						<h1>Tin-Dog</h1>
-						<h2 class="showcase-description-header">
-							Eine wunderschöne Single-Page-Application
-						</h2>
-						<ul class="showcase-list">
-							<li class="showcase-feature">Einladende landingpage</li>
-							<li class="showcase-feature">
-								Wichtigsten Informationen auf einen Blick
-							</li>
-							<li class="showcase-feature"></li>
-						</ul>
-						<div>
-							<a href="https://wusabinga.github.io/TinDog"
-								><button class="action-btn">Visit this showcase-page</button></a
-							>
-						</div>
-					</article>
-				</div>
-				<div class="showcase-card">
-					<article>
-						<h1>uHost</h1>
-						<h2 class="showcase-description-header">
-							Host your business on a perfect way
-						</h2>
-						<ul class="showcase-list">
-							<li class="showcase-feature">Features</li>
-							<li class="showcase-feature">Dein Angebot, deine Produkte</li>
-							<li class="showcase-feature">Deine Highlights</li>
-						</ul>
-						<div><button class="action-btn disabled">Disabled</button></div>
-					</article>
-				</div>
-			</section>
-			<!-- ------------------------------ features ------------------------------- -->
-			<section class="features">
-				<div>
-					<h1 class="title features-title">Meine besonderen Eigenschaften</h1>
-				</div>
-				<div>
-					<ul>
-						<li class="features-item">
-							<i class="fas fa-book-reader fa-2x"></i> schnell Lernfähig
-						</li>
-						<li class="features-item">
-							<i class="fas fa-users fa-2x"></i> Teamplayer
-						</li>
-						<li class="features-item">
-							<i class="far fa-lightbulb fa-2x"></i> Kreativ
-						</li>
-						<li class="features-item">
-							<i class="fas fa-microscope fa-2x"></i> Analytisch
-						</li>
-						<li class="features-item">
-							<i class="fas fa-vial fa-2x"></i> Experimentier-Freudig
-						</li>
-						<li class="features-item">
-							<i class="fas fa-map-marked-alt fa-2x"></i> Zielstrebig
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
+        <div class="text-box__half-wide">
+          <h2>Stephan Löcher</h2>
+          <h3>Ihr Web-Entwickler</h3>
+          <h4>
+            Web-Entwickler aus Faszination. Web-Entwickler als Rohdiamant?
+            <br />
+            Wie kann ein Rohdiamant wertvoll sein?
+          </h4>
+          <p>
+            Jeden Tag lerne ich etwas neues auf dem Weg zum Web-Entwickler. Dabei werden Vorstellungen zur Realität,
+            angetrieben durch meinen Wissensdurst.
+          </p>
+          <p>
+            <span> Aber wie kann ein Rohdiamant nun für Sie wertvoll sein?</span><br />
+            Ein Rohdiamant bekommt mit dem Feinschliff seine eigentliche Form und den Wert. Übertragen bedeutet dies,
+            mit ein wenig Geduld und Wissen gebe Ich Ihnen Loyalität, Ideenreichtum und neben Teamfähigkeit auch meine
+            Kreativität, Experimentierfreude sowie meine analytische Auffassungsgabe.
+          </p>
+          <p>
+            Noch Fragen? Zögern Sie nicht mich zu kontaktieren oder schauen Sie in der "About Me" Section rein. Ich
+            freue mich auf Sie.
+          </p>
+          <div class="cta-container">
+            <a class="cta-button" href="./contact.html">Contact Me</a>
+            <a class="cta-button" href="./aboutme.html">About Me</a>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------ showcase ------------------------------- -->
+      <section>
+        <div>
+          <h1 class="title">Showcase Pages</h1>
+        </div>
+      </section>
+      <section class="showcase">
+        <div class="showcase-card">
+          <article>
+            <h1>Tin-Dog</h1>
+            <h2 class="showcase-description-header">Eine wunderschöne Single-Page-Application</h2>
+            <ul class="showcase-list">
+              <li class="showcase-feature">Einladende landingpage</li>
+              <li class="showcase-feature">Wichtigsten Informationen auf einen Blick</li>
+              <li class="showcase-feature"></li>
+            </ul>
+            <div>
+              <a href="https://wusabinga.github.io/TinDog"
+                ><button class="action-btn">Visit this showcase-page</button></a
+              >
+            </div>
+          </article>
+        </div>
+        <div class="showcase-card">
+          <article>
+            <h1>uHost</h1>
+            <h2 class="showcase-description-header">Host your business on a perfect way</h2>
+            <ul class="showcase-list">
+              <li class="showcase-feature">Features</li>
+              <li class="showcase-feature">Dein Angebot, deine Produkte</li>
+              <li class="showcase-feature">Deine Highlights</li>
+            </ul>
+            <div><button class="action-btn disabled">Disabled</button></div>
+          </article>
+        </div>
+      </section>
+      <!-- ------------------------------ features ------------------------------- -->
+      <section class="features">
+        <div>
+          <h1 class="title features-title">Meine besonderen Eigenschaften</h1>
+        </div>
+        <div>
+          <ul>
+            <li class="features-item"><i class="fas fa-book-reader fa-2x"></i> schnell Lernfähig</li>
+            <li class="features-item"><i class="fas fa-users fa-2x"></i> Teamplayer</li>
+            <li class="features-item"><i class="far fa-lightbulb fa-2x"></i> Kreativ</li>
+            <li class="features-item"><i class="fas fa-microscope fa-2x"></i> Analytisch</li>
+            <li class="features-item"><i class="fas fa-vial fa-2x"></i> Experimentier-Freudig</li>
+            <li class="features-item"><i class="fas fa-map-marked-alt fa-2x"></i> Zielstrebig</li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-		<!-- ------------------------------- footer -------------------------------- -->
+    <!-- ------------------------------- footer -------------------------------- -->
 
-		<footer class="main-footer">
-			<ul class="footer-list">
-				<li class="footer-list__item">
-					<a class="footer-link" href="https://github.com/Wusabinga"
-						><i class="fab fa-github fa-2x"></i
-					></a>
-				</li>
-				<li class="footer-list__item">
-					<a
-						class="footer-link"
-						href="https://www.linkedin.com/in/stephan-l%C3%B6cher-2ab7871b2/"
-						><i class="fab fa-linkedin fa-2x"></i
-					></a>
-				</li>
-			</ul>
-			<div class="copyright">
-				&copy; @ Stephan Löcher <br />
-				All rights reserved
-			</div>
+    <footer class="main-footer">
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          <a class="footer-link" href="https://github.com/Wusabinga"><i class="fab fa-github fa-2x"></i></a>
+        </li>
+        <li class="footer-list__item">
+          <a class="footer-link" href="https://www.linkedin.com/in/stephan-l%C3%B6cher-2ab7871b2/"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        &copy; @ Stephan Löcher <br />
+        All rights reserved
+      </div>
 
-			<a class="footer-link footer_case-law" href="./rechtliches.html"
-				><img
-					class="case-law"
-					src="./img/FAVPNG_court-gavel-judge-lawsuit_kLjPZJmy.png"
-					alt="Rechtliches"
-			/></a>
-		</footer>
+      <a class="footer-link footer_case-law" href="./rechtliches.html"
+        ><img class="case-law" src="./img/FAVPNG_court-gavel-judge-lawsuit_kLjPZJmy.png" alt="Rechtliches"
+      /></a>
+    </footer>
 
-		<script src="./scripts/inspectled.js" defer></script>
-	</body>
+    <script src="./scripts/inspectled.js" defer></script>
+  </body>
 </html>

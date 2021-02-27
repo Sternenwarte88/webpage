@@ -21,9 +21,19 @@
     "grunt-sftp-deploy": "^0.2.5"
   },
   "devDependencies": {
-    "grunt-contrib-cssmin": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "grunt-contrib-cssmin": "^4.0.0",
     "grunt-contrib-htmlmin": "^3.1.0",
     "grunt-contrib-uglify": "^5.0.0",
-    "grunt-cwebp": "^3.0.3"
+    "grunt-cwebp": "^3.0.3",
+    "ts-standard": "^10.0.0"
   }
 }

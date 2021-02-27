@@ -113,3 +113,6 @@ google.html
 .ftppass
 Gruntfile.js
 prod/
+
+scripts/*.js.map
+scripts/*.js
