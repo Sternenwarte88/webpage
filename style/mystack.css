@@ -37,8 +37,20 @@
   width: 95%; }
 
 .my-stack__gridbox {
-  display: grid;
+  display: none;
   justify-items: center; }
+
+.stack-box_accordion_Main-Stack {
+  grid-column: span 2; }
+
+.stack-box_accordion_button {
+  width: 100%; }
+
+.accordion_stack_button {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 3rem;
+  margin-right: 3rem; }
 
 @media (min-width: 640px) {
   .stack-box img {
@@ -66,7 +78,7 @@
     grid-column-start: 1; }
 
   .my-stack__gridbox {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fit, 50%);
     align-items: center; }
 
