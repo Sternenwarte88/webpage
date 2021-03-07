@@ -1,6 +1,10 @@
 @import 'colors.scss';
 @import 'templates.scss';
 
+.active {
+  display: grid !important;
+}
+
 .top-box {
   background: no-repeat center #6342d9a3 url('../img/webp/14727-scaled.webp');
   background-blend-mode: overlay;
@@ -99,11 +103,34 @@
       grid-column-start: 1;
     }
   }
-  .my-stack__gridbox {
+  .gridbox_container {
     display: none;
-    grid-template-columns: repeat(auto-fit, 50%);
+    margin: auto;
+    width: 75%;
     align-items: center;
+    overflow: hidden;
+    width: 100%;
   }
+
+  .transitionbox {
+    transform: translate(100%, 0);
+    position: relative;
+    transition: transform 1s ease-in-out;
+  }
+
+  .transition-animation {
+    transform: translate(0, 0) !important;
+  }
+
+  .my-stack {
+    margin-bottom: 2rem;
+  }
+
+  // .my-stack__gridbox {
+  //   display: none;
+  //   grid-template-columns: repeat(auto-fit, 50%);
+  //   align-items: center;
+  // }
 
   .text-box {
     width: 90%;
