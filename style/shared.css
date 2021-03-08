@@ -15,6 +15,23 @@ body {
   grid-template-rows: 3.5rem auto 4rem;
   height: 100%; }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 15px; }
+
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(circle, #6bfae7 66%, #88abf7 100%);
+  border-radius: 15px;
+  box-shadow: inset 0px -6px 7px #e8e8e8; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(circle, #c7ceff 14%, #f9d4ff 64%); }
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 15px;
+  box-shadow: inset 9px 7px 12px #f0f0f0; }
+
 main {
   grid-row: 2 / 3; }
 

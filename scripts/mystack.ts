@@ -8,6 +8,15 @@ const frontendBox: HTMLDivElement = document.querySelector('.frontend__gridbox')
 const backendBox: HTMLDivElement = document.querySelector('.backend__gridbox') as HTMLDivElement;
 const overallBox: HTMLDivElement = document.querySelector('.overall__gridbox') as HTMLDivElement;
 
+const completeStackBox: HTMLDivElement = document.getElementById('complete_stack_box') as HTMLDivElement;
+
+const completeStackBoxHeight = (document.getElementsByTagName('main')[0].clientHeight * (60 / 100));
+
+const styleCompleteStackBox = function () {
+  completeStackBox.style.border = '5px ridge rgba(189, 242, 255, 0.781)';
+  completeStackBox.style.height = `${completeStackBoxHeight}px`;
+};
+
 mainStackBox.setAttribute('main-stack', 'true');
 frontendBox.setAttribute('frontend', 'true');
 backendBox.setAttribute('backend', 'true');
@@ -16,7 +25,9 @@ overallBox.setAttribute('overall', 'true');
 const actionBox: HTMLDivElement[] = [mainStackBox, frontendBox, backendBox, overallBox];
 const addActiveTransitionTimeout:number[] = [];
 const removeActiveTransistionTimeout:number[] = [];
+
 function displayBtnHandler (field: string) {
+  styleCompleteStackBox();
   while (addActiveTransitionTimeout.length > 1) {
     clearTimeout(addActiveTransitionTimeout[1]);
     addActiveTransitionTimeout.splice(1, 1);
@@ -30,8 +41,9 @@ function displayBtnHandler (field: string) {
       const addTransitionTimeout = setTimeout(() => {
         box.querySelector('.transitionbox')?.classList.add('transition-animation');
       }, 1000);
-      box.classList.add('active');
+
       addActiveTransitionTimeout.push(addTransitionTimeout);
+      box.classList.add('active');
     } else {
       box.querySelector('.transitionbox')?.classList.remove('transition-animation');
       const addRemoveTimeout = setTimeout(() => {
